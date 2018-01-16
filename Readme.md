@@ -1,7 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вячеслав Архипов](https://up.htmlacademy.ru/adaptive/13/user/335253).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
@@ -26,17 +26,17 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455590/09e03f32-206a-11e6-9dc8-32d4c11edc90.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455696/52f9152e-206d-11e6-9e2d-5c6a68f29419.png">
 
 Получится вот так:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455592/0a060884-206a-11e6-863d-531a4023ac2e.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455697/531c27c6-206d-11e6-80d5-365e13dd691d.png">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306255/51a677ea-3efb-11e7-8f8f-b2f929bfda21.png">
 
 Клонировать репозиторий можно так:
 
@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/adaptive)», уровень 2 от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/335253-mishka.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/335253-mishka
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/335253-mishka/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/335253-mishka?type=dev
+[travis-image]: https://travis-ci.org/htmlacademy-adaptive/335253-pink.svg?branch=master
+[travis-url]: https://travis-ci.org/htmlacademy-adaptive/335253-pink
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/335253-pink/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/335253-pink?type=dev
