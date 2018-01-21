@@ -6,11 +6,25 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
 				<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип" width="#" height="#">
 			</a>
 			<nav class="main-nav">
   			<button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
   		</nav>
     </header>
     <main class="page-main">
@@ -26,15 +40,13 @@
               <li class="type__item item">
                 <label class="item__content">
                   <input class="item__label" type="radio" name="item__content" value="accessory" id="accessory_field" checked>
-                  <span class="item__radio-custom"></span>
-									<span class="item__text">Аксессуар для интерьера</span>
+                  <span class="item__text">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="type_item">
                 <label class="item__content">
                   <input class="item__label" type="radio" name="item__content" value="toy" id="toy_field">
-                  <span class="item__radio-custom"></span>
-									<span class="item__text">Детская игрушка</span>
+                  <span class="item__text">Детская игрушка</span>
                 </label>
               </li>
             </ul>
@@ -45,42 +57,36 @@
                 <li class="color__item item">
                   <label class="item__white">
                     <input class="item__label" type="checkbox" name="white" id="white_field" checked>
-                    <span class="item__checkbox_custom"></span>
-  									<span class="item__text">Белый</span>
+                    <span class="item__text">Белый</span>
                   </label>
                 </li>
                 <li class="color__item item">
                   <label class="item__content">
                     <input class="item__label" type="checkbox" name="grey" id="grey_field" checked>
-                    <span class="item__checkbox_custom"></span>
-  									<span class="item__text">Серый</span>
+                    <span class="item__text">Серый</span>
                   </label>
                 </li>
                 <li class="color__item item">
                   <label class="item__content">
                     <input class="item__label" type="checkbox" name="tiffany" id="tiffany_field">
-                    <span class="item__checkbox_custom"></span>
                     <span class="item__text">"Тиффани"</span>
                   </label>
                 </li>
                 <li class="color__item item">
                   <label class="item__content">
                     <input class="item__label" type="checkbox" name="black" id="black_field">
-                    <span class="item__checkbox_custom"></span>
                     <span class="item__text">Черный</span>
                   </label>
                 </li>
                 <li class="color__item item">
                   <label class="item__content">
                     <input class="item__label" type="checkbox" name="pink" id="pink_field">
-                    <span class="item__checkbox_custom"></span>
                     <span class="item__text">Розовый</span>
                   </label>
                 </li>
                 <li class="color__item item">
                   <label class="item__content">
                     <input class="item__label" type="checkbox" name="orange" id="orange_field">
-                    <span class="item__checkbox_custom"></span>
                     <span class="item__text">Оранжевый</span>
                   </label>
                 </li>
@@ -89,7 +95,7 @@
           <div class="form__user user">
             <h2 class="type__title">ФИО</h2>
             <label class="user__name">
-              <b class="user__name-text">Имя:</b>
+              <span class="user__name-text">Имя:</span>
               <input class="user__name-value" type="text" name="name" id="name_field" placeholder="Введите ваше имя*">
             </label>
             <label class="user__surname">
@@ -104,10 +110,8 @@
           <div class="form__contacts contacts">
             <h2 class="contacts__title">Тел</h2>
             <input class="contacts__tel" type="text"  name="phone" id="tel_field" placeholder="+7 XXX XX XX*">
-            <span class="contact__tel-icon"></span>
             <h2 class="contacts__title">E-mail</h2>
             <input class="contact__email" type="text" name="email" id="email_field" placeholder="Ваш Email*">
-            <span class="contact__email-icon"></span>
           </div>
           <div class="form__wishes wishes">
             <h2 class="wishes__title">Доп</h2>

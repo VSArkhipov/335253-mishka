@@ -11,22 +11,39 @@
 			</a>
 			<nav class="main-nav">
   			<button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
   		</nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Магазин аксессуаров и игрушек</h1>
       <section class="goods">
         <header class="goods__header">
-          <h2 class="goods__caption">Милые штуки ручной работы для дома</h2>
+          <h1 class="goods__caption">Милые штуки ручной работы для дома</h1>
         </header>
         <ul class="range">
           <li class="range__item">
-            <h3 class="range__item-caption">Предметы интерьера</h3>
-            <img class="range__item-picture" src="http://placehold.it/150x100" alt="Лампа" width="" height="">
+            <a class="range__link" href="#">
+              <h3 class="range__caption">Предметы интерьера</h3>
+              <span class="range__lamp"></span>
+            </a>
           </li>
-          <li class="range__item--second">
-            <h3 class="range__item-caption">Детские игрушки</h3>
-            <img class="range__item-picture" src="http://placehold.it/150x100" alt="Игрушка" width="" height="">
+          <li class="range__item range__item--second">
+            <a class="range__link" href="#">
+              <h3 class="range__caption">Детские игрушки</h3>
+              <span class="range__toy"></span>
+            </a>
           </li>
         </ul>
         <div class="week">
@@ -50,43 +67,37 @@
           <img class="week__picture" src="http://placehold.it/150x100" alt="Корзинка" width="" height="">
           <p class="week__price">Цена: 990 руб.</p>
           <a class="week__order button" href="#">Заказать</a>
+          <div class="modal visually-hidden">
+            <h2 class="modal__title">Добавить в корзину</h2>
+            <p class="modal_text">Выберите размер:</p>
+            <button class="modal__button" type="button">S</button>
+            <button class="modal__button" type="button">M</button>
+            <button class="modal__button" type="button">L</button>
+            <a class="modal_add button" href="#">Добавить</a>
+          </div>
         </div>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
-          <div class="about-us__item">
-              <img class="about-us__picture" src="http://placehold.it/150x100" alt="Цветок" width="#" height="#">
-              <p class="about-us__text">Экологически чистые материалы</p>
-          </div>
-          <div class="about-us__item">
-              <img class="about-us__picture" src="http://placehold.it/150x100" alt="Ковёр" width="#" height="#">
-              <p class="about-us__text">Скандинавский стиль по российской цене</p>
-          </div>
-          <div class="about-us__item">
-              <img class="about-us__picture" src="http://placehold.it/150x100" alt="Сердце" width="#" height="#">
-              <p class="about-us__text">Увеличивает лайки на фотографиях</p>
-          </div>
-          <div class="about-us__item">
-              <img class="about-us__picture" src="http://placehold.it/150x100" alt="Клубок" width="#" height="#">
-              <p class="about-us__text">Связано вручную с любоыью и умилением</p>
-          </div>
-          <div class="about-us__item">
-              <img class="about-us__picture" src="http://placehold.it/150x100" alt="Ракета" width="#" height="#">
-              <p class="about-us__text">Поддержка отечественного производителя</p>
-          </div>
-          <div class="about-us__item">
-              <img class="about-us__picture" src="http://placehold.it/150x100" alt="Подарок" width="#" height="#">
-              <p class="about-us__text">Поставляется в подарочной упаковке</p>
-          </div>
+          <ul class="about-us__list">
+            <li class="about-us__item">Экологически чистые материалы</li>
+            <li class="about-us__item">Скандинавский стиль по российской цене</li>
+            <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+            <li class="about-us__item">Связано вручную с любоыью и умилением</li>
+            <li class="about-us__item">Поддержка отечественного производителя</li>
+            <li class="about-us__item">Поставляется в подарочной упаковке</li>
+          </ul>
       </section>
       <section class="reviews">
         <h2 class="reviews_title">Отзывы</h2>
           <div class="reviews__list">
-          <blockquote class="reviews__item">
-            <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков.</p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
-            <cite class="reviews__author-name--nickname">@misssssiskras</cite>
-          </blockquote>
+            <blockquote class="reviews__item">
+              <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков.</p>
+              <cite class="reviews__author-name">Анастасия Красильникова</cite>
+              <cite class="reviews__author-name">
+                <a class="reviews__nickname" href="#">@misssssiskras</a>
+              </cite>
+            </blockquote>
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
           <button class="reviews__next" type="button">Следующий отзыв</button>
           <a class="reviews__write button" href="#">Написать</a>
@@ -96,7 +107,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <div class="email">
           <span class="email__field">e-mail:</span>
-          <span class="email__value">info@mimimishkashop.ru</span>
+          <a class="email__value" href="#">info@mimimishkashop.ru</a>
         </div>
         <div class="address">
           <span class="address__field">адрес:</span>

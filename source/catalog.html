@@ -6,43 +6,93 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
 				<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип" width="#" height="#">
 			</a>
 			<nav class="main-nav">
   			<button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
   		</nav>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
-      <section class="good">
+      <article class="good">
         <img class="good__picture" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик" width="" height="">
-        <h2 class="good__title">Зайчик-попрыгайчик</h2>
+        <h1 class="good__title">
+          <a class="good__link" href="#">Зайчик-попрыгайчик</a>
+        </h1>
         <p class="good__text">Рост 30 см, вес 200 г</p>
         <b class="good__price">1 200 руб.</b>
-        <span class="good__price-basket"></span>
-      </section>
-      <section class="good">
+        <a class="good__basket-link">
+          <span class="good__basket"></span>
+        </a>
+        <div class="modal visually-hidden">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal_text">Выберите размер:</p>
+          <button class="modal__button" type="button">S</button>
+          <button class="modal__button" type="button">M</button>
+          <button class="modal__button" type="button">L</button>
+          <a class="modal_add button" href="#">Добавить</a>
+        </div>
+      </article>
+      <article class="good">
         <img class="good__picture" src="http://placehold.it/150x100" alt="Корзинка для белья" width="" height="">
-        <h2 class="good__title">Корзинка для белья</h2>
+        <h1 class="good__title">
+          <a class="good__link" href="#">Корзинка для белья</a>
+        </h1>
         <p class="good__text">Диаметр 15 см, высота 10 см</p>
         <b class="good__price">690 руб.</b>
-        <span class="good__price-basket"></span>
-      </section>
-      <section class="good">
+        <a class="good__basket-link">
+          <span class="good__basket"></span>
+        </a>
+        <div class="modal visually-hidden">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal_text">Выберите размер:</p>
+          <button class="modal__button" type="button">S</button>
+          <button class="modal__button" type="button">M</button>
+          <button class="modal__button" type="button">L</button>
+          <a class="modal_add button" href="#">Добавить</a>
+        </div>
+      </article>
+      <article class="good">
         <img class="good__picture" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек" width="" height="">
-        <h2 class="good__title">Большая корзинка для игрушек</h2>
+        <h1 class="good__title">
+          <a class="good__link" href="#">Большая корзинка для игрушек</a>
+        </h1>
         <p class="good__text">Диаметр 30 см, высота 30 см</p>
         <b class="good__price">1 500 руб.</b>
-        <span class="good__price-basket"></span>
-      </section>
-      <section class="video">
+        <a class="good__basket-link">
+          <span class="good__basket"></span>
+        </a>
+        <div class="modal visually-hidden">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal_text">Выберите размер:</p>
+          <button class="modal__button" type="button">S</button>
+          <button class="modal__button" type="button">M</button>
+          <button class="modal__button" type="button">L</button>
+          <a class="modal_add button" href="#">Добавить</a>
+        </div>
+      </article>
+      <article class="video">
         <span class="video__camera"></span>
         <h2 class="video__title">Процесс производства</h2>
         <img class="video__picture" src="http://placehold.it/150x100" alt="Процесс производства" width="" height="">
         <p class="video_text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="video__order button" href="#">Сделать заказ</a>
-      </section>
+      </article>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
