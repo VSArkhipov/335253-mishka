@@ -7,13 +7,13 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-				<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип" width="#" height="#">
-			</a>
-			<nav class="main-nav">
-  			<button class="main-nav__toggle" type="button">Открыть меню</button>
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип" width="#" height="#">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
@@ -25,12 +25,14 @@
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-  		</nav>
+      </nav>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
       <article class="good">
-        <img class="good__picture" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик" width="" height="">
+        <a class="good__link" href="#">
+          <img class="good__picture" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик" width="" height="">
+        </a>
         <h1 class="good__title">
           <a class="good__link" href="#">Зайчик-попрыгайчик</a>
         </h1>
@@ -39,17 +41,11 @@
         <a class="good__basket-link">
           <span class="good__basket"></span>
         </a>
-        <div class="modal visually-hidden">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p class="modal_text">Выберите размер:</p>
-          <button class="modal__button" type="button">S</button>
-          <button class="modal__button" type="button">M</button>
-          <button class="modal__button" type="button">L</button>
-          <a class="modal_add button" href="#">Добавить</a>
-        </div>
       </article>
       <article class="good">
-        <img class="good__picture" src="http://placehold.it/150x100" alt="Корзинка для белья" width="" height="">
+        <a class="good__link" href="#">
+          <img class="good__picture" src="http://placehold.it/150x100" alt="Корзинка для белья" width="" height="">
+        </a>
         <h1 class="good__title">
           <a class="good__link" href="#">Корзинка для белья</a>
         </h1>
@@ -58,17 +54,11 @@
         <a class="good__basket-link">
           <span class="good__basket"></span>
         </a>
-        <div class="modal visually-hidden">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p class="modal_text">Выберите размер:</p>
-          <button class="modal__button" type="button">S</button>
-          <button class="modal__button" type="button">M</button>
-          <button class="modal__button" type="button">L</button>
-          <a class="modal_add button" href="#">Добавить</a>
-        </div>
       </article>
       <article class="good">
-        <img class="good__picture" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек" width="" height="">
+        <a class="good__link" href="#">
+          <img class="good__picture" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек" width="" height="">
+        </a>
         <h1 class="good__title">
           <a class="good__link" href="#">Большая корзинка для игрушек</a>
         </h1>
@@ -77,14 +67,6 @@
         <a class="good__basket-link">
           <span class="good__basket"></span>
         </a>
-        <div class="modal visually-hidden">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p class="modal_text">Выберите размер:</p>
-          <button class="modal__button" type="button">S</button>
-          <button class="modal__button" type="button">M</button>
-          <button class="modal__button" type="button">L</button>
-          <a class="modal_add button" href="#">Добавить</a>
-        </div>
       </article>
       <article class="video">
         <span class="video__camera"></span>
@@ -101,10 +83,10 @@
             <a class="social__link social__link--inst" href="#">Мы в Instagram</a>
           </li>
           <li class="social__item">
-    				<a class="social__link social__link--fb" href="#">Мы в Facebook</a>
+            <a class="social__link social__link--fb" href="#">Мы в Facebook</a>
           </li>
           <li class="social__item">
-    				<a class="social__link social__link--tw" href="#">Мы в Twitter</a>
+            <a class="social__link social__link--tw" href="#">Мы в Twitter</a>
           </li>
         </ul>
       </div>
@@ -113,5 +95,24 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
       </div>
     </footer>
+    <div class="modal visually-hidden">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label class="modal__size">
+          <input class="modal__button" type="radio" name="size" value="S" id="S_field" checked>
+          <span class="modal__value">S</span>
+        </label>
+        <label class="modal__size">
+          <input class="modal__button" type="radio" name="size" value="M" id="M_field">
+          <span class="modal__value">M</span>
+        </label>
+        <label class="modal__size">
+          <input class="modal__button" type="radio" name="size" value="L" id="L_field">
+          <span class="modal__value">L</span>
+        </label>
+        <button class="modal_add button" type="submit" href="#">Добавить</a>
+      </form>
+    </div>
   </body>
 </html>
