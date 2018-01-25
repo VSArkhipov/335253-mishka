@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -11,7 +12,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list visually-hidden">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -27,8 +28,8 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+    <main class="page-form">
+      <h1 class="page-form__title">Вязание на заказ</h1>
       <section class="intro">
         <p class="intro__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
@@ -43,7 +44,7 @@
                   <span class="item__text">Аксессуар для интерьера</span>
                 </label>
               </li>
-              <li class="type_item">
+              <li class="type__item item">
                 <label class="item__content">
                   <input class="item__label" type="radio" name="item__content" value="toy" id="toy_field">
                   <span class="item__text">Детская игрушка</span>
@@ -93,25 +94,25 @@
             </ul>
           </div>
           <div class="form__user user">
-            <h2 class="type__title">ФИО</h2>
+            <h2 class="user__title">ФИО</h2>
             <label class="user__name">
               <span class="user__name-text">Имя:</span>
               <input class="user__name-value" type="text" name="name" id="name_field" placeholder="Введите ваше имя*">
             </label>
             <label class="user__surname">
-              <b class="user__surname-text">Фамилия:</b>
+              <span class="user__surname-text">Фамилия:</span>
               <input class="user__surname-value" type="text" name="surname" id="surname_field" placeholder="Укажите фамилию*">
             </label>
             <label class="user__patronymic">
-              <b class="user__patronymic-text">Отчество:</b>
+              <span class="user__patronymic-text">Отчество:</span>
               <input class="user__patronymic-value"type="text" name="patronymic" id="patronymic_field" placeholder="Отчество, если желаете">
             </label>
           </div>
-          <div class="form__contacts contacts">
-            <h2 class="contacts__title">Тел</h2>
-            <input class="contacts__tel" type="text"  name="phone" id="tel_field" placeholder="+7 XXX XX XX*">
-            <h2 class="contacts__title">E-mail</h2>
-            <input class="contact__email" type="text" name="email" id="email_field" placeholder="Ваш Email*">
+          <div class="form__relations relations">
+            <h2 class="relations__title">Тел</h2>
+            <input class="relations__tel" type="text"  name="phone" id="tel_field" placeholder="+7 XXX XX XX*">
+            <h2 class="relations__title">E-mail</h2>
+            <input class="relations__email" type="text" name="email" id="email_field" placeholder="Ваш Email*">
           </div>
           <div class="form__wishes wishes">
             <h2 class="wishes__title">Доп</h2>
