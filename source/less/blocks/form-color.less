@@ -1,5 +1,14 @@
 .color {
   font-weight: bold;
+  border: 1px solid red;
+
+  .color__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
 
   .color__title {
     text-transform: uppercase;
@@ -13,5 +22,30 @@
 
   .color__item {
     line-height: 18px;
+  }
+
+  @media (min-width: 768px) {
+    .color__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+    }
+
+    .color__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 230px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .color__wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
+
+    .color__list {
+      width: 300px;
+    }
   }
 }

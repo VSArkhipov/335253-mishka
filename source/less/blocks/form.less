@@ -2,6 +2,14 @@
   font-size: 17px;
   line-height: 16px;
 
+  .form__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
   .form__legend {
     font-size: 14px;
     color: @dingy;
@@ -13,5 +21,29 @@
     font-size: 17px;
     line-height: 16px;
     color: @dingy;
+  }
+
+  @media (min-width: 768px) {
+    .form__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form__order {
+      order: -1;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .form__wrapper {
+      width: 1250px;
+      padding-left: 189px;
+      padding-left: 189px;
+      justify-content: space-between;
+    }
+
+
   }
 }

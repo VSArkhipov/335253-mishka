@@ -1,0 +1,41 @@
+.page-title {
+  background: @smoky;
+  border: 1px solid red;
+
+  .page-title__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
+  .page-title__title {
+    color: @black;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 30px;
+    border: 1px solid black;
+  }
+
+  @media (min-width: 768px) {
+    .page-title__wrapper {
+      width: 768px;
+      .indent-tablet();
+    }
+
+    .page-title__title {
+      width: 400px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+
+  @media (min-width:1250px) {
+    .page-title__wrapper {
+      width: 1250px;
+      padding-left: 225px;
+      padding-right: 225px;
+    }
+  }
+}

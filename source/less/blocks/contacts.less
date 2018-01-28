@@ -1,7 +1,21 @@
 .contacts {
   background: @white;
-  .indent();
   margin-bottom: 38px;
+  border: 1px solid red;
+
+  .contacts__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
+  .contacts__map-wrapper {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 
   .contacts__title {
     margin: 0;
@@ -34,7 +48,6 @@
   }
 
   .contacts__picture {
-    margin-left: -30px;
     margin-bottom: 38px;
   }
 
@@ -45,5 +58,32 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .contacts__wrapper {
+      width: 768px;
+      .indent-tablet();
+    }
+
+    .contacts__item {
+      display: flex;
+      margin-bottom: auto;
+    }
+
+    .contacts__item-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contacts__picture {
+      width: ;
+      height: ;
+    }
+
+    .contacts__write {
+      width: 230px;
+      margin: 0 auto;
+    }
   }
 }

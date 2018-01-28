@@ -1,9 +1,25 @@
 .goods{
   padding-bottom: 70px;
+  background: @grey;
+  border: 1px solid red;
+
+  .goods__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
+  .goods__range-wrapper {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px solid pink;
+  }
 
   .goods__header {
     background: #a5c1c0 url(../img/hero-mobile@1x.jpg) no-repeat 50% 50%;
-    .indent();
   }
 
   .goods__caption {
@@ -15,7 +31,8 @@
     margin: 0;
     padding-top: 85px;
     padding-bottom: 105px;
-  }
+    border: 1px solid brown;
+}
 
   .goods__range {
     margin-top: 0;
@@ -41,5 +58,43 @@
     color: @white;
     font-size: 19px;
     line-height: 24px;
+  }
+
+  @media (min-width: 768px) {
+    .goods__wrapper {
+      width: 768px;
+      .indent-tablet();
+    }
+
+    .goods__range-wrapper {
+      width: 768px;
+      .indent-tablet();
+    }
+
+    .goods__caption {
+      padding-left: 85px;
+      padding-right: 85px;
+    }
+
+    .goods__range {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .goods__item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .goods__wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
+
+    .goods__range-wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
   }
 }
