@@ -6,7 +6,15 @@
   }
 
   .page-catalog__wrapper {
-    border: 1px solid blue;
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
+  .page-catalog__goods {
+    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -21,6 +29,10 @@
   }
 
   @media (min-width: 768px) {
+    .page-catalog__goods {
+      width: 768px;
+      .indent-tablet();
+    }
     .page-catalog__wrapper {
       width: 768px;
       .indent-tablet();
@@ -34,6 +46,7 @@
     }
 
     .page-catalog__goods {
+      width: 1250px;
       display: flex;
       .indent-tablet();
       justify-content: space-between;

@@ -103,26 +103,72 @@
 
     .week__content {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
+      width: 350px;
+      flex-direction: column;
       border: 1px solid brown;
-      align-items: flex-start;
       align-content: flex-start;
+      position: relative;
     }
 
     .week__description {
       width: 320px;
+      margin-bottom: 45px;
     }
 
     .week__list {
       order: 3;
+      margin-bottom: 55px;
+    }
+
+    .week__price {
+      margin-bottom: 30px;
     }
 
     .week__picture {
-    order: 2;
-    width: 334px;
-    height: 403px;
+      width: 335px;
+      height: 405px;
+      position: absolute;
+      top: 0px;
+      left: 380px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .week__wrapper {
+      width: 1250px;
+      padding-left: 275px;
+      padding-right: 275px;
+    }
+
+    .week__header {
+      justify-content: flex-start;
+    }
+
+    .week__name {
+      order: -1;
+      margin-right: 250px;
+      margin-left: -150px;
+    }
+
+    .week__picture {
+      top: -130px;
+      left: 350px;
+      z-index: 1;
+      width: 525px;
+      height: 636px;
+    }
+
+    .week__caption {
+      z-index: 2;
+      margin-bottom: 80px;
+    }
+
+    .week__description {
+      margin-bottom: 75px;
+    }
+
+    .week__list {
+      margin-bottom: 130px;
     }
   }
 }
