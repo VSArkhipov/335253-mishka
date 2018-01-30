@@ -1,4 +1,14 @@
 .user {
+  border: 1px solid red;
+
+  .user__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
   .user__title {
     text-transform: uppercase;
     color: @aqua-text;
@@ -13,6 +23,7 @@
 
   .user__name-value {
     line-height: 16px;
+    width: 260px;
     color: @dingy;
   }
 
@@ -23,6 +34,7 @@
 
   .user__surname-value {
     line-height: 16px;
+    width: 260px;
     color: @dingy;
   }
 
@@ -33,6 +45,78 @@
 
   .user__patronymic-value {
     line-height: 16px;
+    width: 260px;
     color: @dingy;
+  }
+
+  @media (min-width: 768px) {
+    .user__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .user__fields {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user__name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid pink;
+    }
+
+    .user__name-value {
+      width: 430px;
+    }
+
+    .user__surname {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid pink;
+    }
+
+    .user__surname-value {
+      width: 375px;
+    }
+
+    .user__patronymic {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid pink;
+    }
+
+    .user__patronymic-value {
+      width: 375px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .user__wrapper {
+      width: 1250px;
+      .indent-desktop();
+      justify-content: flex-start;
+    }
+
+    .user__name-value {
+      width: 626px;
+    }
+
+    .user__surname-value {
+      width: 573px;
+    }
+
+    .user__patronymic-value {
+      width: 573px;
+    }
+
+    .user__fields {
+      margin-left: 50px;
+    }
   }
 }

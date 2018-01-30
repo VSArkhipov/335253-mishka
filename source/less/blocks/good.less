@@ -1,4 +1,10 @@
 .good {
+  border: 1px solid red;
+
+  .good__wrapper{
+    .indent-mobile();
+  }
+
   .good__link {
     text-decoration: none;
     color: @black;
@@ -18,5 +24,25 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
+  }
+
+  @media (min-width: 768px) {
+    .good__wrapper {
+      display: flex;
+      padding-left: 0;
+    }
+
+    .good__description {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .good__wrapper {
+      width: 315px;
+
+      flex-direction: column;
+    }
   }
 }

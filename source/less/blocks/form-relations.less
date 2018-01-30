@@ -1,4 +1,14 @@
 .relations {
+  border: 1px solid red;
+
+  .relations__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
   .relations__title {
     text-transform: uppercase;
     color: @aqua-text;
@@ -14,5 +24,58 @@
   .relations__email {
     line-height: 18px;
     color: @dingy;
+  }
+
+  @media (min-width: 768px) {
+    .relations__wrapper {
+      background: @smoky;
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      flex-direction: column;
+    }
+
+    .relations__tel-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .relations__email-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .relations__tel {
+      width: 500px;
+    }
+
+    .relations__email {
+      width: 500px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .relations__wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
+
+    .relations__tel-wrapper {
+      justify-content: flex-start;
+    }
+
+    .relations__email-wrapper {
+      justify-content: flex-start;
+    }
+
+    .relations__tel {
+      width: 700px;
+      margin-left: 58px;
+    }
+
+    .relations__email {
+      width: 700px;
+      margin-left: 34px;
+    }
   }
 }

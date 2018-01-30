@@ -1,5 +1,14 @@
 .type {
   font-weight: bold;
+  border: 1px solid red;
+
+  .type__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
 
   .type__title {
     text-transform: uppercase;
@@ -13,5 +22,20 @@
 
   .type__item {
     line-height: 18px;
+  }
+
+  @media (min-width: 768px) {
+    .type__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .type__wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
   }
 }

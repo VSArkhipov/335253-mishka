@@ -1,3 +1,31 @@
 .page-footer {
   background: @smoky;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+
+  .page-footer__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
+  @media (min-width: 768px) {
+    .page-footer__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .page-footer__wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
+  }
 }

@@ -1,4 +1,13 @@
 .wishes{
+  border: 1px solid red;
+  .wishes__wrapper {
+    border: 1px solid green;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
   .wishes__title {
     text-transform: uppercase;
     color: @aqua-text;
@@ -9,5 +18,37 @@
   .wishes__value {
     line-height: 18px;
     color: @dingy;
+    width: 260px;
+    height: 140px;
+    border: 2px solid @black;
+  }
+
+  @media (min-width: 768px) {
+    .wishes__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wishes__value {
+      width: 500px;
+      height: 140px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .wishes__wrapper {
+      width: 1250px;
+      .indent-desktop();
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .wishes__value {
+      margin-left: 52px;
+      width: 700px;
+      height: 140px;
+    }
   }
 }
