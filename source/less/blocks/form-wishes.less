@@ -1,7 +1,7 @@
 .wishes{
-  border: 1px solid red;
+  padding-bottom: 13px;
+
   .wishes__wrapper {
-    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -13,17 +13,20 @@
     color: @aqua-text;
     font-weight: bold;
     font-size: 17px;
+    margin-bottom: 24px;
   }
 
   .wishes__value {
     line-height: 18px;
     color: @dingy;
-    width: 260px;
-    height: 140px;
+    width: 258px;
+    height: 138px;
     border: 2px solid @black;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .wishes {
     .wishes__wrapper {
       width: 768px;
       .indent-tablet();
@@ -36,8 +39,10 @@
       height: 140px;
     }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .wishes {
     .wishes__wrapper {
       width: 1250px;
       .indent-desktop();

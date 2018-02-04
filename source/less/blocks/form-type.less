@@ -1,13 +1,14 @@
 .type {
   font-weight: bold;
-  border: 1px solid red;
+  padding-bottom: 6px;
 
   .type__wrapper {
-    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     .indent-mobile();
+    margin-top: 24px;
+    padding-left: 29px;
   }
 
   .type__title {
@@ -18,21 +19,28 @@
 
   .type__list {
     list-style: none;
+    margin-left: 6px;
+    margin-top: 34px;
   }
 
   .type__item {
     line-height: 18px;
+    margin-bottom: 24px;
   }
+}
 
-  @media (min-width: 768px) {
-    .type__wrapper {
+@media (min-width: 768px) {
+    .type {
+      .type__wrapper {
       width: 768px;
       .indent-tablet();
       display: flex;
     }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .type {
     .type__wrapper {
       width: 1250px;
       .indent-desktop();

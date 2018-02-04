@@ -1,12 +1,10 @@
 .intro {
-  border: 1px solid red;
-
   .intro__wrapper {
-    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     .indent-mobile();
+    margin-top: 22px;
   }
 
   .intro__text {
@@ -14,15 +12,19 @@
     font-size: 13px;
     line-height: 24px;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .intro {
     .intro__wrapper {
       width: 768px;
       .indent-tablet();
     }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .intro {
     .intro__wrapper {
       width: 1250px;
       padding-left: 225px;

@@ -1,15 +1,13 @@
 .page-footer {
-  background: @smoky;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 
   .page-footer__wrapper {
-    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     .indent-mobile();
+    background: @smoky;
   }
 
   @media (min-width: 768px) {
@@ -19,6 +17,8 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      align-items: center;
+      padding-bottom: 20px;
     }
   }
 

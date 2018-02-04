@@ -1,12 +1,16 @@
 .relations {
-  border: 1px solid red;
+  padding-bottom: 32px;
 
   .relations__wrapper {
-    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     .indent-mobile();
+    padding-left: 29px;
+  }
+
+  .relations__tel-wrapper {
+    margin-bottom: 46px;
   }
 
   .relations__title {
@@ -14,21 +18,25 @@
     color: @aqua-text;
     font-weight: bold;
     font-size: 17px;
+    margin-bottom: 21px;
   }
 
   .relations__tel {
     line-height: 18px;
     color: @dingy;
+    margin-left: -2px;
   }
 
   .relations__email {
     line-height: 18px;
     color: @dingy;
+    margin-left: -2px;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .relations {
     .relations__wrapper {
-      background: @smoky;
       width: 768px;
       .indent-tablet();
       display: flex;
@@ -53,8 +61,10 @@
       width: 500px;
     }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .relations{
     .relations__wrapper {
       width: 1250px;
       .indent-desktop();
