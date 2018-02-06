@@ -27,6 +27,8 @@
 
 @media (min-width: 768px) {
   .wishes {
+    margin-top: 49px;
+
     .wishes__wrapper {
       width: 768px;
       .indent-tablet();
@@ -34,15 +36,25 @@
       justify-content: space-between;
     }
 
+    .wishes__title {
+      margin-top: 17px;
+      margin-left: 2px;
+    }
+
     .wishes__value {
-      width: 500px;
-      height: 140px;
+      width: 481px;
+      height: 46px;
+      padding-left: 15px;
+      padding-bottom: 92px;
+      font-size: 19px;
     }
   }
 }
 
 @media (min-width: 1250px) {
   .wishes {
+    margin-top: 50px;
+
     .wishes__wrapper {
       width: 1250px;
       .indent-desktop();
@@ -50,10 +62,14 @@
       justify-content: flex-start;
     }
 
+    .wishes__title {
+      margin-left: 62px;
+    }
+
     .wishes__value {
-      margin-left: 52px;
-      width: 700px;
-      height: 140px;
+      margin-left: 74px;
+      width: 681px;
+      height: 45px;
     }
   }
 }

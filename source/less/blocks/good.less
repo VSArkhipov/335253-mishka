@@ -1,8 +1,8 @@
 .good {
-  border: 1px solid red;
-
-  .good__wrapper{
-    .indent-mobile();
+  .good__wrapper {
+    outline: 1px solid @silver;
+    padding-bottom: 27px;
+    margin-bottom: 32px;
   }
 
   .good__link {
@@ -13,10 +13,27 @@
     line-height: 24px;
   }
 
+  .good__picture {
+    width: 259px;
+    height: 195px;
+  }
+
+  .good__title {
+    margin: 0;
+    margin-left: 28px;
+    margin-right: 25px;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .good__text {
     color: @dingy;
     font-size: 13px;
     line-height: 30px;
+    margin-left: 27px;
+    margin-top: 6px;
+    margin-bottom: 41px;
   }
 
   .good__price {
@@ -24,25 +41,120 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
+    margin-left: 27px;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .good {
     .good__wrapper {
       display: flex;
       padding-left: 0;
+      padding-bottom: 0;
+      margin-bottom: 57px;
     }
 
     .good__description {
       display: flex;
       flex-direction: column;
     }
+
+    .good__picture {
+      width: 335px;
+      height: 327px;
+    }
+
+    .good__title {
+      font-size: 20px;
+      margin-left: 27px;
+      margin-top: 24px;
+      margin-right: 64px;
+    }
+
+    .good__link {
+      font-size: 20px;
+    }
+
+    .good__text {
+      font-size: 15px;
+
+      &--linen {
+        padding-top: 3px;
+      }
+    }
+
+    .good__price {
+      font-size: 17px;
+      margin-top: 157px;
+      margin-left: 32px;
+
+      &--linen {
+        margin-top: 153px;
+      }
+
+      &--basket {
+        margin-top: 132px;
+      }
+    }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .good {
     .good__wrapper {
-      width: 315px;
-
       flex-direction: column;
+      padding-bottom: 27px;
+      margin-bottom: 58px;
+    }
+
+    .good__picture {
+      width: 315px;
+      height: 462px;
+    }
+
+    .good__description {
+      width: 268px;
+    }
+
+    .good__title {
+      margin-left: 29px;
+      margin-top: 20px;
+      margin-right: 0;
+
+      &--linen {
+        margin-left: 27px;
+      }
+
+      &--basket {
+        margin-left: 26px;
+      }
+    }
+
+    .good__text {
+      margin-left: 28px;
+
+      &--linen {
+        padding-top: 0;
+        margin-left: 26px;
+      }
+
+      &--basket {
+        margin-left: 26px;
+      }
+    }
+
+    .good__price {
+      margin-top: 19px;
+      margin-left: 28px;
+
+      &--linen {
+        margin-left: 27px;
+      }
+
+      &--basket {
+        margin-left: 26px;
+        margin-top: -4px;
+      }
     }
   }
 }

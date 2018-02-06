@@ -80,9 +80,6 @@
               </h1>
               <p class="good__text">Рост 30 см, вес 200 г</p>
               <b class="good__price">1 200 руб.</b>
-              <a class="good__basket-link">
-                <span class="good__basket"></span>
-              </a>
             </div>
           </div>
         </article>
@@ -92,14 +89,11 @@
               <img class="good__picture" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек" width="" height="">
             </a>
             <div class="good__description">
-              <h1 class="good__title">
-                <a class="good__link" href="#">Корзинка для белья</a>
+              <h1 class="good__title good__title--linen">
+                <a class="good__link " href="#">Корзинка для белья</a>
               </h1>
-              <p class="good__text">Диаметр 15 см, высота 10 см</p>
-              <b class="good__price">690 руб.</b>
-              <a class="good__basket-link">
-                <span class="good__basket"></span>
-              </a>
+              <p class="good__text good__text--linen">Диаметр 15 см, высота 10 см</p>
+              <b class="good__price good__price--linen">690 руб.</b>
             </div>
           </div>
         </article>
@@ -109,35 +103,29 @@
               <img class="good__picture" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек" width="" height="">
             </a>
             <div class="good__description">
-              <h1 class="good__title">
-                <a class="good__link" href="#">Большая корзинка для игрушек</a>
+              <h1 class="good__title good__title--basket">
+                <a class="good__link good__link--basket" href="#">Большая корзинка для игрушек</a>
               </h1>
-              <p class="good__text">Диаметр 30 см, высота 30 см</p>
-              <b class="good__price">1 500 руб.</b>
-              <a class="good__basket-link">
-                <span class="good__basket"></span>
-              </a>
+              <p class="good__text good__text--basket">Диаметр 30 см, высота 30 см</p>
+              <b class="good__price good__price--basket">1 500 руб.</b>
+          </div>
+          </div>
+        </article>
+        <article class="video">
+          <div class="video__wrapper">
+            <div class="video__caption">
+              <h2 class="video__title">Процесс производства</h2>
+            </div>
+            <div class="video__content">
+              <img class="video__picture" src="http://placehold.it/320x100" alt="Процесс производства" width="" height="">
+            </div>
+            <div class="video__description">
+              <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a class="video__order button" href="#">Сделать заказ</a>
             </div>
           </div>
         </article>
       </div>
-      <article class="video">
-        <div class="video__wrapper">
-          <div class="video__caption">
-            <div class="video__title">
-              <span class="video__camera"></span>
-              <h2 class="video__title">Процесс производства</h2>
-            </div>
-          </div>
-          <div class="video__content">
-            <img class="video__picture" src="http://placehold.it/320x100" alt="Процесс производства" width="" height="">
-          </div>
-          <div class="video__description">
-            <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="video__order button" href="#">Сделать заказ</a>
-          </div>
-        </div>
-      </article>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -167,20 +155,20 @@
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="modal__size">
             <input class="modal__button" type="radio" name="size" value="S" id="S_field" checked>
             <span class="modal__value">S</span>
           </label>
           <label class="modal__size">
             <input class="modal__button" type="radio" name="size" value="M" id="M_field">
-            <span class="modal__value">M</span>
+            <span class="modal__value modal__value--m">M</span>
           </label>
           <label class="modal__size">
             <input class="modal__button" type="radio" name="size" value="L" id="L_field">
             <span class="modal__value">L</span>
           </label>
-          <button class="modal_add button" type="submit" href="#">Добавить</a>
+          <button class="modal__add button" type="submit" href="#">Добавить</a>
         </form>
       </div>
     </div>

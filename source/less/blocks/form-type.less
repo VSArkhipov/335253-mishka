@@ -30,11 +30,31 @@
 }
 
 @media (min-width: 768px) {
-    .type {
-      .type__wrapper {
+  .type {
+    padding-bottom: 23px;
+
+    .type__wrapper {
       width: 768px;
       .indent-tablet();
       display: flex;
+    }
+
+    .type__title {
+      margin-left: 2px;
+    }
+
+    .type__list {
+      margin-left: 152px;
+      margin-top: 12px;
+    }
+
+    .type__item {
+      font-size: 19px;
+      margin-bottom: 59px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
 }
@@ -44,6 +64,14 @@
     .type__wrapper {
       width: 1250px;
       .indent-desktop();
+    }
+
+    .type__title {
+      margin-left: 64px;
+    }
+
+    .type__list {
+      margin-left: 97px;
     }
   }
 }

@@ -36,6 +36,9 @@
 
 @media (min-width: 768px) {
   .relations {
+    padding-bottom: 40px;
+    padding-top: 49px;
+
     .relations__wrapper {
       width: 768px;
       .indent-tablet();
@@ -53,12 +56,36 @@
       justify-content: space-between;
     }
 
+    .relations__title {
+      margin-left: 2px;
+      margin-top: 18px;
+      margin-bottom: 17px;
+
+      &--email {
+        margin-top: -3px;
+        margin-bottom: 30px;
+      }
+    }
+
     .relations__tel {
-      width: 500px;
+      width: 483px;
+      border: none;
+      border-bottom: 2px solid #000000;
+      margin-top: 1px;
+      margin-bottom: -2px;
+      height: 48px;
+      padding-left: 18px;
+      font-size: 19px;
     }
 
     .relations__email {
-      width: 500px;
+      width: 483px;
+      border: none;
+      border-bottom: 2px solid #000000;
+      margin-top: -19px;
+      height: 48px;
+      padding-left: 18px;
+      font-size: 19px;
     }
   }
 }
@@ -70,6 +97,16 @@
       .indent-desktop();
     }
 
+    .relations__title {
+      margin-left: 62px;
+
+      &--email {
+        margin-top: -1px;
+        margin-bottom: 27px;
+        margin-left: 61px;
+      }
+    }
+
     .relations__tel-wrapper {
       justify-content: flex-start;
     }
@@ -79,13 +116,15 @@
     }
 
     .relations__tel {
-      width: 700px;
-      margin-left: 58px;
+      width: 683px;
+      margin-left: 81px;
+      padding-left: 16px;
     }
 
     .relations__email {
-      width: 700px;
-      margin-left: 34px;
+      width: 684px;
+      margin-left: 56px;
+      padding-left: 16px;
     }
   }
 }

@@ -1,16 +1,20 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  background: @smoky;
 
   .page-footer__wrapper {
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     .indent-mobile();
-    background: @smoky;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .page-footer {
+    padding-bottom: 7px;
+
     .page-footer__wrapper {
       width: 768px;
       .indent-tablet();
@@ -21,8 +25,10 @@
       padding-bottom: 20px;
     }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .page-footer {
     .page-footer__wrapper {
       width: 1250px;
       .indent-desktop();

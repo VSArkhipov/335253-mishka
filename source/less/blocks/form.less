@@ -30,8 +30,11 @@
 
 @media (min-width: 768px) {
   .form {
+    padding-bottom: 52px;
+
     .form__color {
       background: @smoky;
+      padding-top: 30px;
     }
 
     .form__relations {
@@ -40,24 +43,48 @@
 
     .form__wrapper {
       width: 768px;
-      .indent-tablet();
+      padding-left: 50px;
       display: flex;
       justify-content: space-between;
     }
 
+    .form__legend {
+      font-size: 17px;
+      line-height: 30px;
+      margin-top: 48px;
+      margin-right: 20px;
+    }
+
     .form__order {
       order: -1;
+      margin-top: 39px;
+      margin-left: 1px;
+      padding-top: 17px;
+      padding-left: 28px;
+      padding-right: 31px;
     }
   }
 }
 
 @media (min-width: 1250px) {
   .form {
+    padding-bottom: 50px;
+
     .form__wrapper {
       width: 1250px;
       padding-left: 189px;
       padding-left: 189px;
       justify-content: space-between;
+    }
+
+    .form__legend {
+      margin-top: 46px;
+      margin-right: 244px;
+    }
+
+    .form__order {
+      margin-top: 36px;
+      margin-left: 87px;
     }
   }
 }

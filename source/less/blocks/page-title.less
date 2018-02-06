@@ -1,10 +1,11 @@
 .page-title {
+  background: @smoky;
+
   .page-title__wrapper {
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     .indent-mobile();
-    background: @smoky;
     margin-top: -19px;
   }
 
@@ -17,25 +18,43 @@
     padding-left: 7px;
     padding-bottom: 76px;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .page-title {
+    margin-top: -82px;
+
     .page-title__wrapper {
       width: 768px;
       .indent-tablet();
     }
 
     .page-title__title {
-      width: 400px;
       font-size: 43px;
       line-height: 50px;
+      padding-top: 94px;
+      padding-left: 139px;
+      padding-bottom: 80px;
     }
   }
+}
 
-  @media (min-width:1250px) {
+@media (min-width:1250px) {
+  .page-title {
+    margin-top: -88px;
+
     .page-title__wrapper {
       width: 1250px;
       padding-left: 225px;
       padding-right: 225px;
+    }
+
+    .page-title__title {
+      font-size: 53px;
+      line-height: 57px;
+      padding-top: 94px;
+      padding-left: 158px;
+      padding-bottom: 100px;
     }
   }
 }
