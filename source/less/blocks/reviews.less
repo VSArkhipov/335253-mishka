@@ -31,6 +31,10 @@
     line-height: 30px;
   }
 
+  .reviews__text &nbsp {
+    display: none;
+  }
+
   .reviews__author-name {
     font-style: normal;
     font-weight: bold;
@@ -77,17 +81,21 @@
 
 @media (min-width: 768px) {
   .reviews {
-    padding-bottom: 146px;
+    padding-bottom: 142px;
 
     .reviews__wrapper {
       width: 768px;
       .indent-tablet();
+      background: url("../img/review@1x.jpg") no-repeat;
+    }
+
+    .reviews__background {
+
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      background: url("../img/review@1x.jpg") no-repeat;
     }
 
     .reviews__title {
@@ -114,65 +122,82 @@
 
     .reviews__switch {
       order: 4;
-      margin-top: -99px;
-      margin-left: 492px;
+      margin-top: -108px;
+      margin-left: 493px;
       outline: none;
       display: flex;
       width: 175px;
     }
 
     .reviews__text {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
+      font-size: 17px;
     }
 
-    .reviews__author {
+    .reviews__author-name {
       display: flex;
       flex-direction: column;
       font-size: 18px;
       line-height: 24px;
+      margin-bottom: 4px;
+    }
+
+    .reviews__nickname {
+      font-size: 17px;
+      line-height: 30px;
     }
   }
 }
 
 @media (min-width: 1250px) {
   .reviews {
-    padding-bottom: 231px;
+    padding-bottom: 226px;
 
     .reviews__wrapper {
       width: 1250px;
-      margin-left: 113px;
-      padding-right: 275px;
+      .indent-desktop();
+      background: none;
+    }
+
+    .reviews__background {
+      background: url("../img/review@1x.jpg") no-repeat;
     }
 
     .reviews__title {
       font-size: 53px;
       line-height: 57px;
-      margin-left: 122px;
+      margin-left: 171px;
       margin-top: 71px;
     }
 
     .reviews__item {
       margin-bottom: 95px;
+      margin-left: 49px;
     }
 
     .reviews__text {
       margin-left: 126px;
       margin-top: -1px;
+      padding-right: 70px;
     }
 
     .reviews__author {
-      font-size: 17px;
       margin-left: 126px;
       margin-top: -19px;
     }
 
+    .reviews__author-name {
+      font-size: 17px;
+    }
+
     .reviews__switch {
-      margin-left: 826px;
-      margin-top: -198px;
+      margin-left: 875px;
+      margin-top: -207px;
     }
 
     .reviews__write {
-      margin-right: -75px;
+      margin-right: 1px;
+      margin-top: 57px;
     }
   }
 }
