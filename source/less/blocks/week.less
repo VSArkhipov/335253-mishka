@@ -1,12 +1,9 @@
 .week {
-
   background: @white;
   color: @dingy;
-  padding-bottom: 75px;
-  border: 1px solid red;
+  padding-bottom: 67px;
 
   .week__wrapper {
-    border: 1px solid green;
     width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -20,6 +17,7 @@
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
+    margin-bottom: 5px;
   }
 
   .week__name {
@@ -29,7 +27,7 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   .week__content {
@@ -41,28 +39,54 @@
     margin: 0;
     font-size: 15px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     order: 1;
-    border: 1px solid black;
   }
 
   .week__list {
     font-size: 15px;
     line-height: 20px;
+    margin-left: -1px;
     order: 2;
+    border-collapse: collapse;
+    margin-bottom: 27px;
   }
 
   .week__param {
-  padding-bottom: 15px;
+    padding-top: 2px;
+    padding-bottom: 11px;
+
+    &--dia {
+      padding-top: 8px;
+    }
+
+    &--hgt {
+      padding-top: 7px;
+    }
   }
 
   .week__value {
-    padding-left: 30px;
-    padding-bottom: 15px;
+    padding-left: 29px;
+    padding-top: 2px;
+    padding-bottom: 11px;
+    padding-right: 27px;
+
+    &--dia {
+      padding-top: 7px;
+    }
+
+    &--hgt {
+      padding-top: 9px;
+    }
+  }
+
+  .week__string {
+    border-bottom: 1px solid @clouded;
   }
 
   .week__picture {
     order: 3;
+    margin-bottom: 24px;
   }
 
   .week__cost {
@@ -87,8 +111,12 @@
     line-height: 20px;
     order: 5;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .week {
+    padding-bottom: 137px;
+
     .week__wrapper {
       width: 768px;
       .indent-tablet();
@@ -98,14 +126,28 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: baseline;
+      padding-bottom: 31px;
+    }
+
+    .week__caption {
+      font-size: 43px;
+      line-height: 50px;
+      margin-left: -4px;
+      padding-top: 39px;
+    }
+
+    .week__name {
+      width: 80px;
+      margin-right: 24px;
+      padding-top: 51px;
+      text-align: center;
+      line-height: 17px;
     }
 
     .week__content {
       display: flex;
       width: 350px;
       flex-direction: column;
-      border: 1px solid brown;
       align-content: flex-start;
       position: relative;
     }
@@ -113,45 +155,95 @@
     .week__description {
       width: 320px;
       margin-bottom: 45px;
+      font-size: 17px;
+      line-height: 30px;
     }
 
     .week__list {
       order: 3;
-      margin-bottom: 55px;
+      margin-bottom: 56px;
+      width: 292px;
+      margin-left: 0;
+    }
+
+    .week__param {
+      padding-top: 0;
+      padding-bottom: 10px;
+
+      &--dia {
+        padding-top: 10px;
+      }
+
+      &--hgt {
+        padding-top: 9px;
+      }
+    }
+
+    .week__value {
+      padding-left: 13px;
+      padding-top: 0;
+      padding-bottom: 10px;
+
+      &--dia {
+        padding-top: 10px;
+      }
+
+      &--hgt {
+        padding-top: 9px;
+      }
     }
 
     .week__price {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
+      font-size: 20px;
+      margin-left: -63px;
+    }
+
+    .week__order {
+      margin-right: 60px;
+      margin-left: -2px;
+      padding-bottom: 14px;
+      padding-top: 14px;
     }
 
     .week__picture {
-      width: 335px;
+      width: 334px;
       height: 405px;
       position: absolute;
-      top: 0px;
-      left: 380px;
+      top: 8px;
+      left: 333px;
     }
   }
+}
 
-  @media (min-width: 1250px) {
+@media (min-width: 1250px) {
+  .week {
+    padding-bottom: 155px;
+
     .week__wrapper {
       width: 1250px;
-      padding-left: 275px;
-      padding-right: 275px;
+      .indent-desktop();
     }
 
     .week__header {
       justify-content: flex-start;
+      margin-top: 40px;
+      margin-left: 175px;
     }
 
     .week__name {
       order: -1;
-      margin-right: 250px;
-      margin-left: -150px;
+      margin-right: 234px;
+      margin-left: -133px;
+      padding-top: 54px;
+    }
+
+    .week__content {
+      margin-left: 175px;
     }
 
     .week__picture {
-      top: -130px;
+      top: -155px;
       left: 350px;
       z-index: 1;
       width: 525px;
@@ -160,15 +252,53 @@
 
     .week__caption {
       z-index: 2;
-      margin-bottom: 80px;
+      font-size: 53px;
+      line-height: 57px;
+      margin-left: -185px;
     }
 
     .week__description {
-      margin-bottom: 75px;
+      margin-bottom: 57px;
+      margin-top: 3px;
     }
 
     .week__list {
-      margin-bottom: 130px;
+      margin-bottom: 107px;
+      margin-left: -1px;
+    }
+
+    .week__param {
+      padding-bottom: 12px;
+
+      &--dia {
+        padding-top: 7px;
+      }
+
+      &--hgt {
+        padding-top: 8px;
+      }
+    }
+
+    .week__value {
+      padding-left: 16px;
+      padding-bottom: 12px;
+
+      &--dia {
+        padding-top: 7px;
+      }
+
+      &--hgt {
+        padding-top: 8px;
+      }
+    }
+
+    .week__price {
+      margin-left: -60px;
+    }
+
+    .week__order {
+      margin-right: 58px;
+      margin-left: -1px;
     }
   }
 }
