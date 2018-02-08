@@ -1,4 +1,37 @@
 .video {
+  .video__wrapper {
+    outline: 1px solid @silver;
+    padding-bottom: 33px;
+    margin-bottom: 59px;
+  }
+
+  .video__caption {
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 89px;
+    padding-right: 30px;
+    padding-top: 9px;
+    margin-bottom: 25px;
+  }
+
+  .video__content {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .video__picture {
+    width: 259px;
+    height: 149px;
+  }
+
+  .video__description {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 33px;
+    padding-right: 34px;
+    padding-top: 11px;
+  }
+
   .video__title {
     color: @black;
     font-weight: bold;
@@ -9,7 +42,8 @@
   .video__text {
     color: @dingy;
     font-size: 13px;
-    line-height: 30px;
+    line-height: 24px;
+    padding-bottom: 13px;
   }
 
   .video__order {
@@ -19,5 +53,104 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video {
+    .video__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: -3px;
+      padding-bottom: 46px;
+      margin-bottom: 64px;
+    }
+
+    .video__caption {
+      width: 768px;
+      padding-left: 107px;
+      padding-right: 50px;
+      padding-top: 22px;
+      margin-bottom: -10px
+    }
+
+    .video__title {
+      font-size: 20px;
+    }
+
+    .video__content {
+      order:-1;
+      padding-left: 0;
+      padding-right: 0;
+      width: 668px;
+      height: 455px;
+    }
+
+    .video__description {
+      width: 768px;
+      padding-left: 42px;
+      padding-right: 141px;
+    }
+
+    .video__picture {
+      width: 668px;
+      height: 454px;
+    }
+
+    .video__text {
+      font-size: 15px;
+      line-height: 30px;
+      padding-bottom: 21px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .video {
+    .video__wrapper {
+      width: 1049px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      position: relative;
+      padding-bottom: 12px;
+      margin-bottom: 106px;
+    }
+
+    .video__content {
+      margin-left: 0;
+    }
+
+    .video__picture {
+      width: 682px;
+      height: 455px;
+    }
+
+    .video__description {
+      width: 350px;
+      margin-left: 719px;
+      padding-right: 50px;
+      margin-top: -57px;
+    }
+
+    .video__caption {
+      width: 350px;
+      margin-left: 654px;
+      margin-top: -399px;
+    }
+
+    .video__title {
+      margin-bottom: 75px;
+    }
+
+    .video__text {
+      padding-bottom: 30px;
+    }
+
+    .video__order {
+      margin-bottom: 50px;
+      margin-left: 2px;
+      padding-right: 3px;
+      margin-right: 26px;
+    }
   }
 }

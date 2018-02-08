@@ -1,13 +1,24 @@
 .modal {
   margin-top: 35px;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+
+  .modal__wrapper {
+    .indent-mobile();
+  }
 
   .modal__title {
     color: @black;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
-    margin-top: 0;
+    margin-top: 31px;
+    margin-left: 52px;
+    margin-right: 53px;
     margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .modal__text {
@@ -15,12 +26,99 @@
     font-size: 15px;
     line-height: 30px;
     margin: 0;
+    margin-left: 61px;
+    margin-top: -13px;
+    margin-bottom: 23px;
+  }
+
+  .modal__form {
+    margin-left: -2px;
   }
 
   .modal__value {
+    display: inline-block;
     color: @dingy;
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
+    border: 2px solid @clouded;
+    padding-left: 34px;
+    padding-right: 35px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    margin-bottom: 32px;
+    cursor: pointer;
+
+    &--m {
+      padding-left: 30px;
+      padding-right: 32px;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+
+  .modal__button {
+    display: none;
+  }
+
+  .modal__add {
+    text-transform: uppercase;
+    color: @white;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 82px;
+    padding-right: 83px;
+    border: none;
+    background-color: @aqua-text;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    margin: 0 auto;
+    width: 567px;
+    box-sizing: border-box;
+    border: 1px solid @border;
+    padding-bottom: 45px;
+
+    .modal__title {
+      font-size: 30px;
+      line-height: 57px;
+      margin-top: 33px;
+      margin-left: 55px;
+    }
+
+    .modal__text {
+      font-size: 17px;
+      margin-left: 176px;
+      margin-top: -12px;
+      margin-bottom: 22px;
+    }
+
+    .modal__form {
+      margin-left: 77px;
+    }
+
+    .modal__value {
+      padding-left: 49px;
+      padding-right: 50px;
+      padding-bottom: 16px;
+      margin-bottom: 31px;
+
+      &--m {
+        padding-left: 46px;
+        padding-right: 46px;
+      }
+    }
+
+    .modal__add {
+      padding-left: 127px;
+      padding-right: 128px;
+    }
   }
 }

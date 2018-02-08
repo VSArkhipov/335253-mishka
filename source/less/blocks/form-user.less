@@ -1,9 +1,23 @@
 .user {
+  padding-bottom: 32px;
+
+  .user__wrapper {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+    padding-left: 28px;
+  }
+
   .user__title {
     text-transform: uppercase;
     color: @aqua-text;
     font-weight: bold;
     font-size: 17px;
+  }
+
+  .user__fields {
+    padding-top: 14px;
   }
 
   .user__name-text {
@@ -13,7 +27,11 @@
 
   .user__name-value {
     line-height: 16px;
+    width: 260px;
     color: @dingy;
+    margin-top: 14px;
+    margin-left: -1px;
+    margin-bottom: 35px;
   }
 
   .user__surname-text {
@@ -23,7 +41,11 @@
 
   .user__surname-value {
     line-height: 16px;
+    width: 260px;
     color: @dingy;
+    margin-top: 13px;
+    margin-left: -1px;
+    margin-bottom: 35px;
   }
 
   .user__patronymic-text {
@@ -33,6 +55,123 @@
 
   .user__patronymic-value {
     line-height: 16px;
+    width: 260px;
     color: @dingy;
+    margin-top: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .user {
+    margin-top: 21px;
+    padding-bottom: 50px;
+
+    .user__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .user__title {
+      margin-top: 45px;
+      margin-left: 2px;
+    }
+
+    .user__fields {
+      display: flex;
+      flex-direction: column;
+      font-size: 19px;
+
+    }
+
+    .user__name {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 29px;
+    }
+
+    .user__name-value {
+      width: 411px;
+      margin-left: 24px;
+      margin-top: -15px;
+      margin-bottom: 0;
+      border: none;
+      border-bottom: 2px solid @black;
+      height: 48px;
+      padding-left: 17px;
+    }
+
+    .user__surname {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .user__surname-text {
+      margin-top: -12px;
+    }
+
+    .user__surname-value {
+      width: 359px;
+      margin-top: 24px;
+      margin-bottom: 34px;
+      border: none;
+      border-bottom: 2px solid @black;
+      height: 48px;
+      padding-left: 16px;
+    }
+
+    .user__patronymic {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .user__patronymic-text {
+      margin-top: -12px;
+    }
+
+    .user__patronymic-value {
+      width: 359px;
+      border: none;
+      border-bottom: 2px solid @black;
+      height: 48px;
+      margin-top: -10px;
+      margin-bottom: 0;
+      padding-left: 16px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .user {
+    .user__wrapper {
+      width: 1250px;
+      .indent-desktop();
+      justify-content: flex-start;
+    }
+
+    .user__title {
+      margin-left: 61px;
+    }
+
+    .user__fields {
+      margin-left: 73px;
+    }
+
+    .user__name-value {
+      width: 609px;
+    }
+
+    .user__surname-value {
+      width: 557px;
+    }
+
+    .user__patronymic-value {
+      width: 557px;
+    }
   }
 }

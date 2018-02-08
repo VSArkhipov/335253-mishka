@@ -1,9 +1,23 @@
 .goods{
-  padding-bottom: 70px;
+  margin-bottom: 7px;
+  background: @grey;
+
+  .goods__wrapper {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+    background: #a5c1c0 url(../img/hero-mobile@1x.jpg) no-repeat 50% 20%;
+  }
+
+  .goods__range-wrapper {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 
   .goods__header {
-    background: #a5c1c0 url(../img/hero-mobile@1x.jpg) no-repeat 50% 50%;
-    .indent();
+    background-size: cover;
   }
 
   .goods__caption {
@@ -13,8 +27,8 @@
     line-height: 30px;
     text-align: center;
     margin: 0;
-    padding-top: 85px;
-    padding-bottom: 105px;
+    padding-top: 69px;
+    padding-bottom: 122px;
   }
 
   .goods__range {
@@ -25,21 +39,145 @@
 
   .goods__item {
     list-style: none;
-    background: @aqua-text;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .goods__item--second {
-    background: @aqua-dark;
   }
 
   .goods__link {
     text-decoration: none;
+    display: inline-block;
+    background: @aqua-text;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 31px;
+    position: relative;
+    width: 260px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 41px;
+      height: 62px;
+      left: 243px;
+      top: 24px;
+      background: url("../img/icon-interior.svg") no-repeat 50% 50%;
+      vertical-align: baseline;
+    }
+  }
+
+  .goods__link--second {
+    background: @aqua-dark;
+
+    &::before {
+      background: url("../img/icon-toy.svg") no-repeat 50% 50%;
+      color: #35a999;
+      width: 60px;
+      height: 60px;
+      left: 233px;
+      top: 21px;
+    }
+  }
+
+  .goods__title {
     color: @white;
     font-size: 19px;
     line-height: 24px;
+    width: 108px;
+  }
+}
+
+@media (min-width: 768px) {
+  .goods {
+    .goods__wrapper {
+      margin-top: -52px;
+      width: 768px;
+      .indent-tablet();
+      background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat 50% 50%;
+    }
+
+    .goods__range-wrapper {
+      width: 768px;
+      .indent-tablet();
+      background: #f9f9f9;
+    }
+
+    .goods__caption {
+      padding-left: 85px;
+      padding-right: 85px;
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 153px;
+      padding-bottom: 373px;
+    }
+
+    .goods__range {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .goods__item {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .goods__link {
+      padding-left: 43px;
+
+      &::before {
+        left: 256px;
+        top: 30px;
+      }
+
+      &--second {
+        &::before {
+            left: 239px;
+            top: 32px;
+          }
+      }
+    }
+
+    .goods__title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: -8px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .goods {
+    padding-bottom: 47px;
+
+    .goods__wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
+
+    .goods__range-wrapper {
+      width: 1250px;
+      .indent-desktop();
+    }
+
+    .goods__caption {
+      font-size: 53px;
+      line-height: 57px;
+      padding-left: 85px;
+      padding-bottom: 359px;
+    }
+
+    .goods__link {
+      padding-right: 222px;
+
+        &::before {
+          left: 447px;
+        }
+
+        &--second {
+          &::before {
+            left: 430px;
+          }
+        }
+    }
   }
 }

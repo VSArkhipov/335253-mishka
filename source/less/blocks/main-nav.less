@@ -5,10 +5,280 @@
 
   .main-nav__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .main-nav__link {
-    text-decoration: none;
-    color: @black;
+  .main-nav__item {
+    margin-top: 37px;
+    margin-bottom: 55px;
+    position: relative;
+    margin-left: 45px;
+
+    &--logo {
+      margin-left: 85px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &--button {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 19px;
+    }
+
+    .main-nav__toggle {
+      width: 20px;
+      height: 30px;
+      font-size: 0;
+      border: 0;
+      background: @white;
+      position: absolute;
+      top: -45px;
+      left: 193px;
+      cursor: pointer;
+
+      &--closed {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: -2px;
+          width: 20px;
+          height: 2px;
+          background-color: @black;
+          box-shadow: 0 6px 0 0 @black, 0 12px 0 0 @black;
+        }
+      }
+
+      &--opened {
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 17px;
+          left: -5px;
+          width: 28px;
+          height: 2px;
+          background-color: @black;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+          box-shadow: none;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .main-nav__link {
+      text-decoration: none;
+      color: @black;
+      position: relative;
+
+        &--loupe {
+          position:absolute;
+          left: -42px;
+          top: 5px;
+        }
+    }
+
+    .main-nav__logo {
+      font-size: 0;
+    }
+  }
+}
+
+.main-nav__list--closed  .main-nav__item--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    .main-nav__item {
+      &--delivery,
+      &--new,
+      &--sale {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list--closed .main-nav__item--mobile {
+    display: list-item;
+  }
+
+  .main-nav {
+    font-size: 15px;
+
+      .main-nav__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 9px;
+      }
+
+      .main-nav__item {
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+
+        &--logo {
+          order: 1;
+          margin-right: 311px;
+        }
+
+        &--search {
+          order: 2;
+          margin-right: 90px;
+        }
+
+        &--basket {
+          order: 3;
+        }
+
+        &--catalog {
+          order: 4;
+          padding-top: 28px;
+          margin-right: 37px;
+        }
+
+        &--knitting {
+          order: 5;
+          padding-top: 28px;
+          margin-right: 132px;
+        }
+
+        &--delivery {
+          order: 6;
+          padding-top: 28px;
+          font-weight: normal;
+          color: @dingy;
+        }
+      }
+
+      .main-nav__link {
+        &--basket {
+          font-size: 17px;
+        }
+
+        &--search {
+          font-size: 0;
+          top: -18px;
+        }
+      }
+    }
+}
+
+@media (max-width: 1250px) {
+  .main-nav {
+    .main-nav__item {
+      &--new,
+      &--sale {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-nav {
+    .main-nav__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+
+    .main-nav__item {
+      position: relative;
+      margin: 0;
+      top: 0;
+      left: 0;
+
+      &--catalog {
+        order: 1;
+        margin-right: 70px;
+        padding-top: 32px;
+      }
+
+      &--knitting {
+        order: 2;
+        margin-right: 116px;
+        padding-top: 32px;
+      }
+
+      &--logo {
+        order: 3;
+        margin-right: 200px;
+        padding-top: 32px;
+      }
+
+      &--search {
+        order: 4;
+        margin-right: 91px;
+      }
+
+      &--basket {
+        order: 5;
+        padding-top: 32px;
+      }
+
+      &--new {
+        order: 6;
+        padding-top: 27px;
+        margin-right: 61px;
+      }
+
+      &--sale {
+        order: 7;
+        padding-top: 27px;
+        margin-right: 504px;
+      }
+
+      &--delivery {
+        order: 8;
+        padding-top: 27px;
+      }
+    }
+
+    .main-nav__link {
+      font-size: 17px;
+
+      &--search {
+        font-size: 0;
+        top: 14px;
+      }
+
+      &--new,
+      &--sale {
+        font-size: 15px;
+      }
+    }
   }
 }

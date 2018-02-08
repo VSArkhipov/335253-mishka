@@ -1,13 +1,75 @@
 .wishes{
+  padding-bottom: 13px;
+
+  .wishes__wrapper {
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .indent-mobile();
+  }
+
   .wishes__title {
     text-transform: uppercase;
     color: @aqua-text;
     font-weight: bold;
     font-size: 17px;
+    margin-bottom: 24px;
   }
 
   .wishes__value {
     line-height: 18px;
     color: @dingy;
+    width: 258px;
+    height: 138px;
+    border: 2px solid @black;
+  }
+}
+
+@media (min-width: 768px) {
+  .wishes {
+    margin-top: 49px;
+
+    .wishes__wrapper {
+      width: 768px;
+      .indent-tablet();
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wishes__title {
+      margin-top: 17px;
+      margin-left: 2px;
+    }
+
+    .wishes__value {
+      width: 481px;
+      height: 46px;
+      padding-left: 15px;
+      padding-bottom: 92px;
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .wishes {
+    margin-top: 50px;
+
+    .wishes__wrapper {
+      width: 1250px;
+      .indent-desktop();
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .wishes__title {
+      margin-left: 62px;
+    }
+
+    .wishes__value {
+      margin-left: 74px;
+      width: 681px;
+      height: 45px;
+    }
   }
 }
