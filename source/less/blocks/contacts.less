@@ -81,7 +81,19 @@
     .contacts__title {
       font-size: 43px;
       line-height: 50px;
-      margin-left: -6px;
+      margin-left: -4px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 47px;
+        height: 82px;
+        right: 2px;
+        top: -16px;
+        background: url("../img/icon-flag.svg") no-repeat 50% 50%;
+      }
     }
 
     .contacts__item {
@@ -166,6 +178,17 @@
       font-size: 53px;
       line-height: 57px;
       margin-left: 72px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 47px;
+        height: 82px;
+        left: -105px;
+        top: -8px;
+        background: url("../img/icon-flag.svg") no-repeat 50% 50%;
+      }
     }
 
     .contacts__item-wrapper {
