@@ -37,6 +37,18 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      left: 0px;
+      top: 0px;
+      background: url("../img/icon-video.svg") no-repeat 50% 50%;
+    }
   }
 
   .video__text {
