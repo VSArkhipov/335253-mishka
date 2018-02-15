@@ -34,7 +34,7 @@
     line-height: 30px;
     text-align: center;
     margin: 0;
-    padding-top: 69px;
+    padding-top: 71px;
     padding-bottom: 122px;
   }
 
@@ -46,12 +46,17 @@
 
   .goods__item {
     list-style: none;
+    background: @aqua-text;
+
+    &--second {
+      background: @aqua-dark;
+    }
   }
 
   .goods__link {
     text-decoration: none;
     display: inline-block;
-    background: @aqua-text;
+
     padding-top: 7px;
     padding-bottom: 10px;
     padding-left: 28px;
@@ -72,8 +77,11 @@
     }
   }
 
+
+
+
   .goods__link--second {
-    background: @aqua-dark;
+
 
     &::before {
       background: url("../img/icon-toy.svg") no-repeat 50% 50%;
@@ -93,7 +101,51 @@
   }
 }
 
+.goods__item {
+  &:hover {
+
+    .goods__link {
+      transform: translateY(-5px);
+      padding-top: 20px;
+    }
+
+    &::before {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:active {
+    .goods__link {
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: 768px) {
+  .goods__link{
+    &:hover {
+
+
+
+        padding-bottom: 15px;
+
+
+      &::before {
+        transform: translateY(-5px);
+      }
+
+      .goods__title {
+        transform: translateY(-5px);
+      }
+    }
+
+    &:active {
+      .goods__link {
+        opacity: 0.3;
+      }
+    }
+  }
+
   .goods {
     .goods__wrapper {
       margin-top: -52px;
@@ -158,6 +210,8 @@
     }
   }
 }
+
+
 
 @media (min-width: 1250px) {
   .goods {

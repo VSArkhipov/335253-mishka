@@ -25,12 +25,22 @@
     background: @white;
     padding-left: 44px;
     padding-right: 46px;
+
+    &:hover {
+      border: 2px solid @dingy;
+      background-color: @dingy;
+      color: @white;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
 @media (min-width: 768px) {
   .form {
-    padding-bottom: 52px;
+    padding-bottom: 50px;
 
     .form__color {
       background: @smoky;
@@ -51,17 +61,17 @@
     .form__legend {
       font-size: 17px;
       line-height: 30px;
-      margin-top: 48px;
+      margin-top: 49px;
       margin-right: 20px;
     }
 
     .form__order {
       order: -1;
-      margin-top: 39px;
-      margin-left: 1px;
+      margin-top: 40px;
+      margin-left: -1px;
       padding-top: 17px;
       padding-left: 28px;
-      padding-right: 31px;
+      padding-right: 32px;
     }
   }
 }

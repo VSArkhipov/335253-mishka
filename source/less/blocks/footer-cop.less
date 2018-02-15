@@ -1,6 +1,7 @@
 .copyright {
-  padding-bottom: 20px;
-  padding-top: 30px;
+  padding-bottom: 17px;
+  padding-top: 27px;
+  padding-left: 10px;
   box-sizing: border-box;
   margin: 0 auto;
   width: 205px;
@@ -13,7 +14,17 @@
     display: inline-block;
     width: 50px;
     height: 40px;
-    background: url("../img/htmlacademy.svg") no-repeat 50% 50%;
+    fill: @aqua-text;
+    margin-left: 29px;
+    margin-top: -5px;
+
+    &:hover {
+      fill: @email-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .copyright__text {
@@ -21,26 +32,20 @@
     font-weight: bold;
     font-size: 19px;
     line-height: 18px;
-    padding-top: 9px;
-    padding-left: 8px;
   }
 }
 
 @media (min-width: 768px) {
   .copyright {
     margin-top: 22px;
-    padding-left: 32px;
-
-    .copyright__link {
-      padding-left: 87px;
-      margin-top: 2px;
-    }
+    padding-left: 40px;
+    padding-top: 40px;
   }
 }
 
 @media (min-width: 1250px) {
   .copyright {
-    padding-left: 94px;
-    margin-top: 21px;
+    padding-left: 102px;
+    margin-top: 23px;
   }
 }

@@ -14,6 +14,18 @@
     color: @aqua-text;
     font-weight: bold;
     font-size: 17px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 198px;
+      height: 1px;
+      background-color:@aqua-elem;
+      top: 8px;
+      left: 63px;
+    }
   }
 
   .user__fields {
@@ -26,12 +38,22 @@
   }
 
   .user__name-value {
-    line-height: 16px;
     width: 260px;
     color: @dingy;
     margin-top: 14px;
-    margin-left: -1px;
-    margin-bottom: 35px;
+    margin-left: 1px;
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    border: none;
+    border-bottom: 2px solid @black;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+
+    &:hover {
+      border-color: @aqua-elem;
+    }
   }
 
   .user__surname-text {
@@ -40,12 +62,22 @@
   }
 
   .user__surname-value {
-    line-height: 16px;
     width: 260px;
     color: @dingy;
-    margin-top: 13px;
-    margin-left: -1px;
-    margin-bottom: 35px;
+    margin-top: 14px;
+    margin-left: 1px;
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    border: none;
+    border-bottom: 2px solid @black;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+
+    &:hover {
+      border-color: @aqua-elem;
+    }
   }
 
   .user__patronymic-text {
@@ -54,10 +86,22 @@
   }
 
   .user__patronymic-value {
-    line-height: 16px;
     width: 260px;
     color: @dingy;
-    margin-top: 13px;
+    margin-top: 14px;
+    margin-left: 1px;
+    margin-bottom: -15px;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    border: none;
+    border-bottom: 2px solid @black;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+
+    &:hover {
+      border-color: @aqua-elem;
+    }
   }
 }
 
@@ -75,7 +119,10 @@
 
     .user__title {
       margin-top: 45px;
-      margin-left: 2px;
+
+      &::after {
+        display: none;
+      }
     }
 
     .user__fields {
@@ -96,17 +143,16 @@
       margin-left: 24px;
       margin-top: -15px;
       margin-bottom: 0;
-      border: none;
-      border-bottom: 2px solid @black;
       height: 48px;
       padding-left: 17px;
+      padding-bottom: 0;
+      font-size: 19px;
     }
 
     .user__surname {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
     }
 
     .user__surname-text {
@@ -115,12 +161,12 @@
 
     .user__surname-value {
       width: 359px;
-      margin-top: 24px;
-      margin-bottom: 34px;
-      border: none;
-      border-bottom: 2px solid @black;
+      margin-top: 21px;
+      margin-bottom: 33px;
       height: 48px;
       padding-left: 16px;
+      padding-bottom: 0;
+      font-size: 19px;
     }
 
     .user__patronymic {
@@ -136,12 +182,12 @@
 
     .user__patronymic-value {
       width: 359px;
-      border: none;
-      border-bottom: 2px solid @black;
       height: 48px;
-      margin-top: -10px;
-      margin-bottom: 0;
+      margin-top: -9px;
+      margin-bottom: 0px;
       padding-left: 16px;
+      padding-bottom: 0;
+      font-size: 19px;
     }
   }
 }
@@ -164,6 +210,7 @@
 
     .user__name-value {
       width: 609px;
+      margin-bottom: 2px;
     }
 
     .user__surname-value {

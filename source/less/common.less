@@ -37,4 +37,15 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
+  color: @dingy;
+
+  &:hover {
+    border: 2px solid @dingy;
+    background-color: @dingy;
+    color: @white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -14,12 +14,24 @@
     text-transform: uppercase;
     color: @aqua-text;
     font-size: 17px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 198px;
+      height: 1px;
+      background-color:@aqua-elem;
+      top: 9px;
+      left: 62px;
+    }
   }
 
   .color__list {
     list-style: none;
-    margin-left: 6px;
-    margin-top: 35px;
+    margin-left: 23px;
+    margin-top: 36px;
   }
 
   .color__item {
@@ -33,7 +45,7 @@
 
 @media (min-width: 768px) {
   .color {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     margin-top: 29px;
 
     .color__wrapper {
@@ -44,29 +56,34 @@
 
     .color__title {
       margin-top: 36px;
-      margin-left: 2px;
+      &::after {
+        display: none;
+      }
     }
 
     .color__list {
       display: flex;
       flex-wrap: wrap;
       margin-left: 145px;
+      margin-top: 34px;
     }
 
     .color__item {
       font-size: 19px;
+      margin-bottom: 44px;
 
       &--grey {
-        margin-left: 178px;
+        margin-left: 179px;
+        margin-bottom: 44px;
       }
 
       &--tiffany {
-        margin-top: 14px;
+        margin-top: 15px;
       }
 
       &--black {
         margin-top: 14px;
-        margin-left: 129px;
+        margin-left: 130px;
       }
 
       &--pink {
@@ -75,7 +92,7 @@
 
       &--orange {
         margin-top: 15px;
-        margin-left: 155px;
+        margin-left: 157px;
       }
     }
   }
@@ -102,7 +119,7 @@
     .color__item {
       &--tiffany {
         margin-top: 0;
-        margin-left: 183px;
+        margin-left: 182px;
       }
 
       &--black {
@@ -111,11 +128,11 @@
       }
 
       &--pink {
-        margin-left: 164px;
+        margin-left: 165px;
       }
 
       &--orange {
-        margin-left: 158px;
+        margin-left: 159px;
       }
     }
   }

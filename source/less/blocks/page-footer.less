@@ -9,11 +9,25 @@
     margin: 0 auto;
     .indent-mobile();
   }
+
+  .page-footer__logo {
+    &--text {
+      font-size: 0;
+    }
+
+    &:hover {
+      fill: @email-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .page-footer {
-    padding-bottom: 7px;
+    padding-bottom: 30px;
 
     .page-footer__wrapper {
       width: 768px;
@@ -22,7 +36,6 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      padding-bottom: 20px;
     }
   }
 }

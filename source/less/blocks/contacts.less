@@ -1,6 +1,6 @@
 .contacts {
   background: @white;
-  padding-bottom: 38px;
+  padding-bottom: 37px;
 
   .contacts__info-wrapper {
     width: 320px;
@@ -57,15 +57,24 @@
   .contacts__value {
     text-decoration: none;
     color: @dingy;
-
     border-bottom: 1px solid @aqua-elem;
     margin-left: 30px;
-  }
 
-  .contacts__value--addres {
-    padding-bottom: 0;
-    border-bottom: none;
+    &--email {
+      &:hover {
+        color: @email-hover;
+        border-bottom: 1px solid @email-hover;
+      }
 
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    &--addres {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
   }
 
   .contacts__picture {
@@ -75,7 +84,6 @@
   .contacts__write {
     text-transform: uppercase;
     text-decoration: none;
-    color: @dingy;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
