@@ -97,8 +97,8 @@
         </div>
         <div class="goods__range-wrapper">
           <ul class="goods__range">
-            <li class="goods__item">
-              <a class="goods__link" href="#">
+            <li class="goods__item goods__item--first">
+              <a class="goods__link goods__link--first" href="#">
                 <h3 class="goods__title">Предметы интерьера</h3>
               </a>
             </li>
@@ -134,7 +134,7 @@
             </table>
             <div class="week__cost">
               <p class="week__price">Цена: 990 руб.</p>
-              <a class="week__order button" href="#">Заказать</a>
+              <a class="week__order week__order--closed button">Заказать</a>
             </div>
             <picture class="week__picture">
               <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
@@ -252,9 +252,10 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal__hidden">
+    <div class="modal modal__closed">
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
+        <button class="modal__close">Закрыть</button>
         <p class="modal__text">Выберите размер:</p>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="modal__size">

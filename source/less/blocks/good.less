@@ -9,30 +9,54 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
-    position: relative;;
 
-    &--cart {
-      position: absolute;
-      color: @black;
-      opacity: 0.2;
-      left: 184px;
-      top: 101px;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .good__basket {
+    margin-left: 106px;
+    color: @black;
+    opacity: 0.2;
+    cursor: pointer;
+
+    &--linen {
+      margin-left: 118px;
+    }
+
+    &--basket {
+      margin-left: 108px;
+    }
+
+    &:hover {
+      color: @aqua-text;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
   .good__description {
     border: 1px solid @silver;
     border-top: none;
-    padding-right: 46px;
+    padding-right: 14px;
     padding-top: 4px;
     margin-top: -6px;
     padding-bottom: 26px;
   }
 
+
   .good__title {
     margin: 0;
     margin-left: 27px;
-    margin-right: -15px;
+    margin-right: 16px;
     margin-top: 23px;
     font-size: 17px;
     line-height: 24px;
@@ -44,10 +68,15 @@
     line-height: 30px;
     margin-left: 27px;
     margin-top: 6px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     border-bottom: 1px solid @clouded;
-    margin-right: -19px;
+    margin-right: 10px;
     padding-bottom: 18px;
+
+    &--linen {
+      margin-top: 5px;
+      padding-bottom: 19px;
+    }
 
     &--basket {
       margin-top: 7px;
@@ -61,27 +90,10 @@
     font-size: 15px;
     line-height: 24px;
     margin-left: 27px;
-  }
-}
 
-.good__link {
-  &:hover {
-    opacity: 0.6;
-
-    .good__link--cart {
-      color: @aqua-text;
-      opacity: 1;
+    &--basket {
+      margin-left: 25px;
     }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.good__link--basket {
-  .good__link--cart {
-    top: 127px;
   }
 }
 
@@ -103,8 +115,8 @@
       border-left: none;
       margin-top: 0;
       padding-top: 0;
-      padding-right: 90px;
-      padding-bottom: 25px;
+      padding-right: 31px;
+      padding-bottom: 24px;
     }
 
     .good__picture {
@@ -115,10 +127,11 @@
     .good__title {
       font-size: 20px;
       margin-top: 24px;
+      margin-right: 44px;
+
       &--linen {
         margin-top: 25px;
       }
-
     }
 
     .good__link {
@@ -134,10 +147,11 @@
     .good__text {
       font-size: 15px;
       padding-bottom: 176px;
-      margin-right: -60px;
       margin-left: 27px;
       border-bottom: none;
       position: relative;
+      margin-right: 0;
+      padding-right: 0;
 
       &::after {
         content: "";
@@ -146,22 +160,18 @@
         width: 268px;
         height: 1px;
         background-color: @silver;
-        top: 204px;
+        top: 206px;
         left: 6px;
-
-
       }
-
 
       &--linen {
         padding-top: 3px;
         margin-right: 5px;
-        padding-bottom: 174px;
-
+        padding-bottom: 173px;
       }
 
       &--basket {
-        padding-bottom: 152px;
+        padding-bottom: 151px;
 
         &::after {
           top: 180px;
@@ -175,35 +185,45 @@
 
       &--linen {
         margin-top: -2px;
-
       }
 
       &--basket {
         margin-top: 0;
       }
     }
+
+    .good__basket {
+      margin-left: 161px;
+
+      &--linen {
+        margin-left: 175px;
+      }
+    }
+
+    .good__cart {
+      margin-top: 2px;
+    }
   }
 }
 
-
-
 @media (min-width: 1250px) {
-  .good__description  {
-    &:hover {
-      box-shadow: 0px 6px 10px 0px rgba(0, 1, 1, 0.1);
-    }
+    .good__description  {
+      &:hover {
+        box-shadow: 0px 6px 10px 0px rgba(0, 1, 1, 0.1);
+      }
 
-    &:active {
-      box-shadow: 0px 3px 5px 0px rgba(0, 1, 1, 0.1);
+      &:active {
+        box-shadow: 0px 3px 5px 0px rgba(0, 1, 1, 0.1);
+      }
     }
-  }
 
   .good {
+    margin-left: -2px;
+
     .good__wrapper {
       flex-direction: column;
       padding-bottom: 27px;
       margin-bottom: 31px;
-      //margin-right: -53px;
       width: 315px;
     }
 
@@ -217,6 +237,7 @@
       padding-right: 0;
       margin-top: -5px;
       border: 1px solid @silver;
+      padding-bottom: 26px;
     }
 
     .good__title {
@@ -243,8 +264,6 @@
       }
 
       &--basket {
-
-
         .good__link--cart {
           left: 237px;
         }
@@ -253,7 +272,7 @@
 
     .good__text {
       margin-left: 28px;
-      padding-bottom: 20px;
+      padding-bottom: 37px;
 
       &--linen {
         padding-top: 0;
@@ -267,15 +286,13 @@
       }
 
       &--basket {
-        margin-left: 27px;
-        padding-bottom: 17px;
+        margin-left: 25px;
+        padding-bottom: 12px;
 
         &::after {
           top: 43px;
         }
       }
-
-
     }
 
     .good__price {
@@ -289,6 +306,20 @@
       &--basket {
         margin-left: 26px;
         margin-top: -4px;
+      }
+    }
+
+    .good__basket {
+      margin-left: 148px;
+
+      &--linen {
+        margin-left: 162px;
+      }
+    }
+
+    .good__cart {
+      &--linen {
+        margin-top: 3px;
       }
     }
   }
