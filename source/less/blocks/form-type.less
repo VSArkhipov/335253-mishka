@@ -15,11 +15,23 @@
     text-transform: uppercase;
     color: @aqua-text;
     font-size: 17px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 198px;
+      height: 1px;
+      background-color:@aqua-elem;
+      top: 9px;
+      left: 62px;
+    }
   }
 
   .type__list {
     list-style: none;
-    margin-left: 6px;
+    margin-left: 23px;
     margin-top: 34px;
   }
 
@@ -40,12 +52,14 @@
     }
 
     .type__title {
-      margin-left: 2px;
+      &::after {
+        display: none;
+      }
     }
 
     .type__list {
-      margin-left: 152px;
-      margin-top: 12px;
+      margin-left: 170px;
+      margin-top: 13px;
     }
 
     .type__item {
@@ -64,6 +78,7 @@
     .type__wrapper {
       width: 1250px;
       .indent-desktop();
+      margin-top: 23px;
     }
 
     .type__title {
@@ -71,7 +86,7 @@
     }
 
     .type__list {
-      margin-left: 97px;
+      margin-left: 115px;
     }
   }
 }

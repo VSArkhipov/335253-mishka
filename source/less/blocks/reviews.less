@@ -57,22 +57,30 @@
     margin: 0;
     border: 0;
     padding-bottom: 35px;
+    padding-top: 15px;
     width: 127px;
     font-size: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .reviews__button--prev {
-    background: url("../img/icon-left-arrow.svg") no-repeat 50% -15%;
+    background: url("../img/icon-left-arrow.svg") no-repeat 50% 45%;
   }
 
   .reviews__button--next {
-    background: url("../img/icon-right-arrow.svg") no-repeat 50% -15%;
+    background: url("../img/icon-right-arrow.svg") no-repeat 50% 45%;
   }
 
   .reviews__write {
     text-transform: uppercase;
     text-decoration: none;
-    color: @dingy;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
