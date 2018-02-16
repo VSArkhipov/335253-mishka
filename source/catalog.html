@@ -111,15 +111,17 @@
             </a>
             <div class="good__description">
               <h1 class="good__title">
-                <a class="good__link" href="#">
-                  <svg class="good__link good__link--cart" width="20.294" height="18.849">
-                    <use xlink:href="#icon-basket"></use>
-                  </svg>
-                  Зайчик-попрыгайчик
-                </a>
+                <a class="good__link" href="#">Зайчик-попрыгайчик</a>
               </h1>
               <p class="good__text">Рост 30 см, вес 200 г</p>
-              <b class="good__price">1 200 руб.</b>
+              <div class="good__price-wrapper">
+                <b class="good__price">1 200 руб.</b>
+                <a class="good__basket">
+                  <svg class="good__cart" width="20.294" height="18.849">
+                    <use xlink:href="#icon-basket"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </article>
@@ -134,15 +136,17 @@
             </a>
             <div class="good__description">
               <h1 class="good__title good__title--linen">
-                <a class="good__link" href="#">
-                  Корзинка для белья
-                  <svg class="good__link good__link--cart" width="20.294" height="18.849">
+                <a class="good__link" href="#">Корзинка для белья</a>
+              </h1>
+              <p class="good__text good__text--linen">Диаметр 15 см, высота 10 см</p>
+              <div class="good__price-wrapper">
+                <b class="good__price good__price--linen">690 руб.</b>
+                <a class="good__basket good__basket--linen">
+                  <svg class="good__cart good__cart--linen" width="20.294" height="18.849">
                     <use xlink:href="#icon-basket"></use>
                   </svg>
                 </a>
-              </h1>
-              <p class="good__text good__text--linen">Диаметр 15 см, высота 10 см</p>
-              <b class="good__price good__price--linen">690 руб.</b>
+              </div>
             </div>
           </div>
         </article>
@@ -157,16 +161,18 @@
             </a>
             <div class="good__description">
               <h1 class="good__title good__title--basket">
-                <a class="good__link good__link--basket" href="#">
-                  Большая корзинка для игрушек
-                  <svg class="good__link good__link--cart" width="20.294" height="18.849">
+                <a class="good__link good__link--basket" href="#">Большая корзинка для игрушек</a>
+              </h1>
+              <p class="good__text good__text--basket">Диаметр 30 см, высота 30 см</p>
+              <div class="good__price-wrapper">
+                <b class="good__price good__price--basket">1 500 руб.</b>
+                <a class="good__basket good__basket--basket good__basket--closed">
+                  <svg class="good__cart" width="20.294" height="18.849">
                     <use xlink:href="#icon-basket"></use>
                   </svg>
                 </a>
-              </h1>
-              <p class="good__text good__text--basket">Диаметр 30 см, высота 30 см</p>
-              <b class="good__price good__price--basket">1 500 руб.</b>
-          </div>
+              </div>
+            </div>
           </div>
         </article>
         <article class="video">
@@ -236,9 +242,10 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal__closed">
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
+        <button class="modal__close">Закрыть</button>
         <p class="modal__text">Выберите размер:</p>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="modal__size">

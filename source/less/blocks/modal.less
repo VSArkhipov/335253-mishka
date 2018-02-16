@@ -3,9 +3,13 @@
   width: 320px;
   box-sizing: border-box;
   margin-top: 35px;
-
+  position: fixed;
+  top: 90px;
+  left: 141px;
+  background: @white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
   .modal__wrapper {
-    .indent-mobile();
+  .indent-mobile();
   }
 
   .modal__title {
@@ -21,6 +25,39 @@
     text-align: center;
   }
 
+  .modal__close {
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    border: 0;
+    background: @white;
+    position: absolute;
+    top: 2px;
+    left: 288px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 2px;
+      width: 28px;
+      height: 2px;
+      background-color: @black;
+      cursor: pointer;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
   .modal__text {
     color: @dingy;
     font-size: 15px;
@@ -33,6 +70,7 @@
 
   .modal__form {
     margin-left: -2px;
+    margin-bottom: 45px;
   }
 
   .modal__value {
@@ -41,7 +79,7 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
-    border: 2px solid @clouded;
+    border: 2px solid @white;
     padding-left: 34px;
     padding-right: 35px;
     padding-top: 16px;
@@ -55,10 +93,22 @@
       margin-left: 3px;
       margin-right: 3px;
     }
+
+    &:hover {
+      border: 2px solid @clouded;
+    }
+
+    &:active {
+      border: 2px solid @aqua-elem;
+    }
   }
 
   .modal__button {
     display: none;
+  }
+
+  .modal__button:checked + .modal__value  {
+    border: 2px solid @aqua-elem;
   }
 
   .modal__add {
@@ -78,6 +128,10 @@
   }
 }
 
+.modal__closed {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .modal {
     margin: 0 auto;
@@ -85,6 +139,12 @@
     box-sizing: border-box;
     border: 1px solid @border;
     padding-bottom: 45px;
+    top: 90px;
+    left: 275px;
+
+    .modal__close {
+      left: 530px;
+    }
 
     .modal__title {
       font-size: 30px;
@@ -120,5 +180,17 @@
       padding-left: 127px;
       padding-right: 128px;
     }
+  }
+}
+
+@media (min-width: 1250px) {
+  .modal {
+    top: 90px;
+    left: 430px;
+    z-index: 3;
+  }
+
+  .modal__close {
+    left: 530px;
   }
 }
