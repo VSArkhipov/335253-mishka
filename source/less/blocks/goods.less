@@ -63,6 +63,7 @@
     padding-right: 31px;
     position: relative;
     width: 260px;
+    box-shadow: 0px 0px 0px 0px @aqua-text;
 
     &::before {
       content: "";
@@ -77,12 +78,7 @@
     }
   }
 
-
-
-
   .goods__link--second {
-
-
     &::before {
       background: url("../img/icon-toy.svg") no-repeat 50% 50%;
       color: #35a999;
@@ -99,23 +95,31 @@
     line-height: 24px;
     width: 108px;
   }
-}
 
-.goods__item {
-  &:hover {
-    transform: translateY(-5px);
-    .goods__link {
-    padding-bottom: 10px;
+
+  .goods__item {
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 0px 0px @aqua-text;
+      .goods__link {
+        padding-bottom: 10px;
+      }
+    }
+
+    &::before {
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      .goods__link {
+        opacity: 0.3;
+      }
     }
   }
 
-  &::before {
-    transform: translateY(-5px);
-  }
-
-  &:active {
-    .goods__link {
-      opacity: 0.3;
+  .goods__item--second {
+    &:hover {
+      box-shadow: 0px 5px 0px 0px @aqua-dark;
     }
   }
 }
