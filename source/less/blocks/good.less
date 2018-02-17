@@ -149,20 +149,8 @@
       padding-bottom: 176px;
       margin-left: 27px;
       border-bottom: none;
-      position: relative;
       margin-right: 0;
       padding-right: 0;
-
-      &::after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 268px;
-        height: 1px;
-        background-color: @silver;
-        top: 206px;
-        left: 6px;
-      }
 
       &--linen {
         padding-top: 3px;
@@ -182,6 +170,18 @@
     .good__price {
       font-size: 17px;
       margin-left: 32px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 268px;
+        height: 1px;
+        background-color: @silver;
+        top: -25px;
+        left: 0;
+      }
 
       &--linen {
         margin-top: -2px;
@@ -279,12 +279,6 @@
         margin-left: 26px;
       }
 
-      &::after {
-        width: 256px;
-        top: 68px;
-        left: 0;
-      }
-
       &--basket {
         margin-left: 25px;
         padding-bottom: 12px;
@@ -298,6 +292,12 @@
     .good__price {
       margin-top: 19px;
       margin-left: 28px;
+
+      &::after {
+        width: 256px;
+        top: -23px;
+        left: 0;
+      }
 
       &--linen {
         margin-left: 27px;

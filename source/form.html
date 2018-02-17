@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -53,7 +55,7 @@
               <picture>
                 <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип">
               </picture>
             </a>
           </li>
@@ -104,6 +106,7 @@
         </div>
       </section>
       <section class="intro">
+        <h2 class="visually-hidden">Форма заказа</h2>
         <div class="intro__wrapper">
           <p class="intro__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
@@ -186,7 +189,7 @@
                 </label>
                 <label class="user__patronymic">
                   <span class="user__patronymic-text">Отчество:</span>
-                  <input class="user__patronymic-value"type="text" name="patronymic" id="patronymic_field" placeholder="Отчество, если желаете">
+                  <input class="user__patronymic-value" type="text" name="patronymic" id="patronymic_field" placeholder="Отчество, если желаете">
                 </label>
               </div>
             </div>
@@ -194,24 +197,24 @@
           <div class="form__relations relations">
             <div class="relations__wrapper">
               <div class="relations__tel-wrapper">
-                <label class="relations__label" for="tel_field">
-                  <h2 class="relations__title">Тел</h2>
-                </label>
+                <h2 class="relations__title">
+                  <label class="relations__label" for="tel_field">Тел</label>
+                </h2>
                 <input class="relations__tel" type="tel"  name="phone" id="tel_field" placeholder="+7 XXX XX XX*">
               </div>
               <div class="relations__email-wrapper">
-                <label class="relations__label" for="email_field">
-                  <h2 class="relations__title relations__title--email">E-mail</h2>
-                </label>
+                <h2 class="relations__label">
+                  <label class="relations__title relations__title--email" for="email_field">E-mail</label>
+                </h2>
                 <input class="relations__email" type="text" name="email" id="email_field" placeholder="Ваш Email*">
               </div>
             </div>
           </div>
           <div class="form__wishes wishes">
             <div class="wishes__wrapper">
-              <label class="wishes__label" for="wishes_field">
-                <h2 class="wishes__title">Доп</h2>
-              </label>
+              <h2 class="wishes__title">
+                <label class="wishes__label" for="wishes_field">Доп</label>
+              </h2>
               <textarea class="wishes__value" rows="6" name="wishes" id="wishes_field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
@@ -219,7 +222,7 @@
             <small class="form__legend">
               <sup>*</sup>Поля обязательны для заполнения
             </small>
-            <button class="form__order button" type="submit" href="#">Отправить заказ</button>
+            <button class="form__order button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>

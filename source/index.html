@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -53,7 +55,7 @@
               <picture>
                 <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип">
               </picture>
             </a>
           </li>
@@ -157,16 +159,15 @@
         <div class="about-us__wrapper">
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <div class="about-us__column">
+
               <li class="about-us__item about-us__item--eko">Экологически чистые материалы</li>
               <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
               <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
-            </div>
-            <div class="about-us__column">
+
               <li class="about-us__item about-us__item--manually">Связано вручную с любовью и умилением</li>
               <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
               <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
-            </div>
+
           </ul>
         </div>
       </section>
@@ -208,7 +209,7 @@
           </div>
           <div class="contacts__map-wrapper">
             <div class="contacts__map">
-            <iframe class="contacts__picture" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1518076664360" width="600" height="450" frameborder="0" alt="Карта" style="border:0" allowfullscreen></iframe>
+            <iframe class="contacts__picture" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1518076664360" width="600" height="450" allowfullscreen></iframe>
               </div>
           </div>
           <div class="contacts__info-wrapper">
@@ -279,7 +280,7 @@
             <input class="modal__button" type="radio" name="size" value="L" id="L_field">
             <span class="modal__value">L</span>
           </label>
-          <button class="modal__add button" type="submit" href="#">Добавить</a>
+          <button class="modal__add button" type="submit">Добавить</button>
         </form>
       </div>
     </div>
