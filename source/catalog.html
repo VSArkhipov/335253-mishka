@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -53,7 +55,7 @@
               <picture>
                 <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип">
               </picture>
             </a>
           </li>
@@ -264,7 +266,7 @@
             <input class="modal__button" type="radio" name="size" value="L" id="L_field">
             <span class="modal__value">L</span>
           </label>
-          <button class="modal__add button" type="submit" href="#">Добавить</a>
+          <button class="modal__add button" type="submit">Добавить</button>
         </form>
       </div>
     </div>

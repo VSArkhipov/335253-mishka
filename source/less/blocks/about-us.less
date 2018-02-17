@@ -3,6 +3,19 @@
   padding-bottom: 55px;
   font-weight: bold;
   color: @black;
+  position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 807px;
+      left: -33px;
+      width: 100%;
+      height: -2px;
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-repeat-x: repeat;
+      background-size: 319px 6px;
+    }
 
   .about-us__wrapper {
     width: 320px;
@@ -129,6 +142,13 @@
   .about-us {
     padding-bottom: 83px;
 
+    &::before {
+      top: -86px;
+      left: -2px;
+      background-size: 772px 17px;
+      height: 17px;
+    }
+
     .about-us__wrapper {
       width: 768px;
       .indent-tablet();
@@ -143,7 +163,7 @@
 
     .about-us__list {
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .about-us__column {
@@ -160,27 +180,35 @@
 
       &--eko {
         width: 232px;
+        padding-right: 102px;
       }
 
       &--style {
         width: 234px;
+        order: 3;
+        padding-right: 99px;
       }
 
       &--likes {
         width: 212px;
         margin-bottom: 0;
+        order: 5;
+        padding-right: 122px;
       }
 
       &--manually {
         width: 247px;
+        order: 2;
       }
 
       &--domestic {
         width: 293px;
+        order: 4;
       }
 
       &--package {
         width: 233px;
+        order: 6;
       }
     }
   }
@@ -189,6 +217,13 @@
 @media (min-width: 1250px) {
   .about-us {
     padding-bottom: 90px;
+
+    &::before {
+      top: -82px;
+      left: -16px;
+      height: 23px;
+      background-size: 1050px 23px;
+    }
 
     .about-us__wrapper {
       width: 1250px;
@@ -208,6 +243,23 @@
 
     .about-us__column {
       width: 350px;
+    }
+
+    .about-us__item {
+      &--eko {
+        padding-right: 118px;
+      }
+
+      &--style {
+        padding-right: 116px;
+      }
+
+      &--likes {
+        width: 212px;
+        margin-bottom: 0;
+        order: 5;
+        padding-right: 138px;
+      }
     }
   }
 }
