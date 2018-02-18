@@ -140,7 +140,7 @@
 
 @media (min-width: 768px) {
   .about-us {
-    padding-bottom: 0;
+    padding-bottom: 82px;
 
     &::before {
       top: -86px;
@@ -174,7 +174,7 @@
       font-size: 20px;
       line-height: 22px;
 
-      &:not(:last-child) {
+      &:not(:last-child):not(:nth-child(3)) {
       margin-bottom: 111px;
     }
 
@@ -199,11 +199,13 @@
       &--manually {
         width: 247px;
         order: 2;
+        padding-right: 88px;
       }
 
       &--domestic {
         width: 293px;
         order: 4;
+        padding-right: 41px;
       }
 
       &--package {
@@ -216,7 +218,7 @@
 
 @media (min-width: 1250px) {
   .about-us {
-    padding-bottom: 0;
+    padding-bottom: 89px;
 
     &::before {
       top: -82px;
@@ -257,8 +259,15 @@
       &--likes {
         width: 212px;
         margin-bottom: 0;
-        order: 5;
         padding-right: 138px;
+      }
+
+      &--manually {
+        padding-right: 100px;
+      }
+
+      &--domestic {
+        padding-right: 55px;
       }
     }
   }

@@ -107,10 +107,6 @@
     display: none;
   }
 
-  .modal__button:checked + .modal__value  {
-    border: 2px solid @aqua-elem;
-  }
-
   .modal__add {
     text-transform: uppercase;
     color: @white;
@@ -126,6 +122,10 @@
     background-color: @aqua-text;
     cursor: pointer;
   }
+}
+
+.modal__button:checked + .modal__value  {
+  border: 2px solid @aqua-elem;
 }
 
 .modal__closed {
