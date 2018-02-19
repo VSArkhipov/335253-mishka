@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+.js-no {
+  display: none;
+}
+
 .sprite {
   display: none;
 }
@@ -46,7 +50,8 @@ body {
   color: @dingy;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 2px solid @dingy;
     background-color: @dingy;
     color: @white;

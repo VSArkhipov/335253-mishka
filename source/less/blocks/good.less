@@ -10,7 +10,8 @@
     font-size: 17px;
     line-height: 24px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 
@@ -33,7 +34,8 @@
       margin-left: 108px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: @aqua-text;
       opacity: 1;
     }
@@ -116,6 +118,10 @@
       padding-top: 0;
       padding-right: 31px;
       padding-bottom: 24px;
+
+      &--linen {
+        padding-right: 31px;
+      }
     }
 
     .good__picture {
@@ -131,6 +137,10 @@
       &--linen {
         margin-top: 25px;
       }
+
+      &--basket {
+        margin-bottom: 5px;
+      }
     }
 
     .good__link {
@@ -140,6 +150,11 @@
       &--cart {
         left: 255px;
         top: 260px;
+      }
+
+      &--basket {
+        max-width: 200px;
+        display: block;
       }
     }
 
@@ -255,6 +270,7 @@
       &--basket {
         margin-left: 26px;
         margin-right: 45px;
+        margin-bottom: 0;
       }
     }
 

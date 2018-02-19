@@ -5,17 +5,17 @@
   color: @black;
   position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 807px;
-      left: -33px;
-      width: 100%;
-      height: -2px;
-      background-image: url(../img/bg-zigzag-line.svg);
-      background-repeat-x: repeat;
-      background-size: 319px 6px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: -26px;
+    width: 100%;
+    height: 6px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat-x: repeat;
+    background-size: 319px 6px;
+  }
 
   .about-us__wrapper {
     width: 320px;
@@ -36,6 +36,8 @@
     margin: 0;
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .about-us__item {
@@ -43,98 +45,99 @@
     line-height: 20px;
     margin-bottom: 83px;
     position: relative;
-  }
+    max-width: 249px;
 
-  .about-us__item--eko {
-    width: 180px;
-    margin-bottom: 84px;
+      &--eko {
+        margin-bottom: 84px;
+        order: 1;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 32px;
-      height: 38px;
-      left: 9px;
-      top: -54px;
-      background: url("../img/icon-feature-flower.svg") no-repeat 50% 50%;
-    }
-  }
+        &::before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 32px;
+          height: 38px;
+          left: 9px;
+          top: -54px;
+          background: url("../img/icon-feature-flower.svg") no-repeat 50% 50%;
+        }
+      }
 
-  .about-us__item--style {
-    width: 205px;
+      &--style {
+        order: 2;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 47px;
-      height: 28px;
-      left: 0;
-      top: -54px;
-      background: url("../img/icon-feature-money.svg") no-repeat 50% 50%;
-    }
-  }
+        &::before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 47px;
+          height: 28px;
+          left: 0;
+          top: -54px;
+          background: url("../img/icon-feature-money.svg") no-repeat 50% 50%;
+        }
+      }
 
-  .about-us__item--likes {
-    width: 180px;
+      &--likes {
+        order: 3;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 34px;
-      height: 28px;
-      left: 7px;
-      top: -49px;
-      background: url("../img/icon-feature-heart.svg") no-repeat 50% 50%;
-    }
-  }
+        &::before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 34px;
+          height: 28px;
+          left: 7px;
+          top: -49px;
+          background: url("../img/icon-feature-heart.svg") no-repeat 50% 50%;
+        }
+      }
 
-  .about-us__item--manually {
-    width: 215px;
+      &--manually {
+        order: 4;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 45px;
-      height: 45px;
-      left: -2px;
-      top: -57px;
-      background: url("../img/icon-feature-ball.svg") no-repeat 50% 50%;
-    }
-  }
+        &::before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 45px;
+          height: 45px;
+          left: -2px;
+          top: -57px;
+          background: url("../img/icon-feature-ball.svg") no-repeat 50% 50%;
+        }
+      }
 
-  .about-us__item--domestic {
-    width: 255px;
+      &--domestic {
+        order: 5;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 55px;
-      height: 24px;
-      left: -7px;
-      top: -51px;
-      background: url("../img/icon-feature-rocket.svg") no-repeat 50% 50%;
-    }
-  }
+        &::before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 55px;
+          height: 24px;
+          left: -7px;
+          top: -51px;
+          background: url("../img/icon-feature-rocket.svg") no-repeat 50% 50%;
+        }
+      }
 
-  .about-us__item--package {
-    width: 205px;
-    margin-bottom: 0;
+      &--package {
+        margin-bottom: 0;
+        order: 6;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 33px;
-      height: 33px;
-      left: 3px;
-      top: -53px;
-      background: url("../img/icon-feature-gift.svg") no-repeat 50% 50%;
-    }
+        &::before {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: 33px;
+          height: 33px;
+          left: 3px;
+          top: -53px;
+          background: url("../img/icon-feature-gift.svg") no-repeat 50% 50%;
+        }
+      }
   }
 }
 
@@ -163,53 +166,50 @@
 
     .about-us__list {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-    }
-
-    .about-us__column {
-      width: 334px;
     }
 
     .about-us__item {
       font-size: 20px;
       line-height: 22px;
-
-      &:not(:last-child):not(:nth-child(3)) {
+      padding-right: 41px;
+      max-width: 293px;
       margin-bottom: 111px;
-    }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
 
       &--eko {
-        width: 232px;
-        padding-right: 102px;
+        order: 1;
       }
 
       &--style {
-        width: 234px;
         order: 3;
-        padding-right: 99px;
       }
 
       &--likes {
-        width: 212px;
-        margin-bottom: 0;
         order: 5;
-        padding-right: 122px;
       }
 
       &--manually {
-        width: 247px;
         order: 2;
-        padding-right: 88px;
       }
 
       &--domestic {
-        width: 293px;
         order: 4;
-        padding-right: 41px;
       }
 
       &--package {
-        width: 233px;
         order: 6;
       }
     }
@@ -243,32 +243,8 @@
       margin-left: 175px;
     }
 
-    .about-us__column {
-      width: 350px;
-    }
-
     .about-us__item {
-      &--eko {
-        padding-right: 118px;
-      }
-
-      &--style {
-        padding-right: 116px;
-      }
-
-      &--likes {
-        width: 212px;
-        margin-bottom: 0;
-        padding-right: 138px;
-      }
-
-      &--manually {
-        padding-right: 100px;
-      }
-
-      &--domestic {
-        padding-right: 55px;
-      }
+      padding-right: 57px;
     }
   }
 }

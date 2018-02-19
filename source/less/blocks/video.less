@@ -159,8 +159,9 @@
       box-sizing: border-box;
       margin: 0 auto;
       position: relative;
-      padding-bottom: 12px;
-      margin-bottom: 93px;
+      padding-bottom: 2px;
+      margin-bottom: 103px;
+      border: 1px solid @silver;
     }
 
     .video__content {
@@ -173,79 +174,33 @@
     }
 
     .video__description {
-      width: 369px;
-      margin-left: 680px;
+      width: 366px;
+      margin-left: 681px;
       padding-right: 50px;
-      margin-top: -40px;
+      margin-top: -459px;
+      padding-top: 162px;
       padding-bottom: 10px;
+      border: 0;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
 
       &:hover {
-        &::after {
-          content: "";
-          position: absolute;
-          display: inline-block;
-          width: 368px;
-          height: 454px;
-          background-color: @white;
-          top: -150px;
-          left: 0;
-          z-index: -1;
-          box-shadow: 0px 6px 10px 0px rgba(0, 1, 1, 0.1);
-        }
+        box-shadow: 0px 6px 10px 0px rgba(0, 1, 1, 0.1);
       }
 
       &:active {
-        &::after {
-          content: "";
-          position: absolute;
-          display: inline-block;
-          width: 368px;
-          height: 454px;
-          background-color: @white;
-          top: -150px;
-          left: 0;
-          z-index: -1;
-          box-shadow: 0px 3px 5px 0px rgba(0, 1, 1, 0.1);
-        }
+        box-shadow: 0px 3px 5px 0px rgba(0, 1, 1, 0.1);
       }
     }
 
     .video__caption {
-      width: 369px;
-      margin-left: 681px;
-      margin-top: -458px;
-      position: relative;
-
-      &:hover {
-        &::after {
-          content: "";
-          position: absolute;
-          display: inline-block;
-          width: 368px;
-          height: 454px;
-          background-color: @white;
-          top: -1px;
-          left: 0;
-          z-index: -1;
-          box-shadow: 0px 6px 10px 0px rgba(0, 1, 1, 0.1);
-        }
-      }
-
-      &:active {
-        &::after {
-          content: "";
-          position: absolute;
-          display: inline-block;
-          width: 368px;
-          height: 454px;
-          background-color: @white;
-          top: -1px;
-          left: 0;
-          z-index: -1;
-          box-shadow: 0px 3px 5px 0px rgba(0, 1, 1, 0.1);
-        }
-      }
+      width: 368px;
+      left: 680px;
+      top: 5px;
+      position: absolute;
+      border: 0;
     }
 
     .video__title {

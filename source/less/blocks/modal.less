@@ -1,15 +1,28 @@
 .modal {
-  margin: 0 auto;
-  width: 320px;
-  box-sizing: border-box;
-  margin-top: 35px;
-  position: fixed;
-  top: 90px;
-  left: 141px;
-  background: @white;
-  box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
+  .modal__background {
+    &--opened {
+      height: 1000px;
+      display: block;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(255,255,255,.9);
+      top: 0;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 5000;
+    }
+  }
+
   .modal__wrapper {
-  .indent-mobile();
+    margin: 0 auto;
+    width: 320px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    background: @white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
   }
 
   .modal__title {
@@ -63,13 +76,13 @@
     font-size: 15px;
     line-height: 30px;
     margin: 0;
-    margin-left: 61px;
+    margin-left: 93px;
     margin-top: -13px;
     margin-bottom: 23px;
   }
 
   .modal__form {
-    margin-left: -2px;
+    margin-left: 30px;
     margin-bottom: 45px;
   }
 
@@ -104,7 +117,14 @@
   }
 
   .modal__button {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
   }
 
   .modal__add {
@@ -134,13 +154,12 @@
 
 @media (min-width: 768px) {
   .modal {
-    margin: 0 auto;
-    width: 567px;
-    box-sizing: border-box;
-    border: 1px solid @border;
-    padding-bottom: 45px;
-    top: 90px;
-    left: 275px;
+    .modal__wrapper {
+      margin: 0 auto;
+      width: 567px;
+      box-sizing: border-box;
+      border: 1px solid @border;
+    }
 
     .modal__close {
       left: 530px;
@@ -155,13 +174,13 @@
 
     .modal__text {
       font-size: 17px;
-      margin-left: 176px;
+      margin-left: 205px;
       margin-top: -12px;
       margin-bottom: 22px;
     }
 
     .modal__form {
-      margin-left: 77px;
+      margin-left: 107px;
     }
 
     .modal__value {

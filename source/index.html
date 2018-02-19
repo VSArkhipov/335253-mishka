@@ -25,7 +25,7 @@
             </a>
           </li>
           <li class="main-nav__item main-nav__item--button">
-            <button class="main-nav__toggle main-nav__toggle--opened" type="button">Меню</button>
+            <button class="main-nav__toggle main-nav__toggle--opened  js-no" type="button">Меню</button>
           </li>
           <li class="main-nav__item main-nav__item--mobile main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -110,7 +110,7 @@
             </table>
             <div class="week__cost ">
               <p class="week__price">Цена: 990 руб.</p>
-              <a class="week__order week__order--closed button listen modalbutton-closed">Заказать</a>
+              <a class="week__order button listen modal__button--closed" href="#">Заказать</a>
             </div>
             <picture class="week__picture">
               <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
@@ -127,11 +127,11 @@
         <div class="about-us__wrapper">
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
-              <li class="about-us__item about-us__item--eko">Экологически чистые материалы</li>
-              <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
-              <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
+              <li class="about-us__item about-us__item--eko">Экологически чистые&nbsp;материалы</li>
               <li class="about-us__item about-us__item--manually">Связано вручную с любовью и умилением</li>
+              <li class="about-us__item about-us__item--style">Скандинавский стиль по&nbsp;российской цене</li>
               <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
+              <li class="about-us__item about-us__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
               <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
@@ -228,25 +228,27 @@
       </div>
     </footer>
     <div class="modal modal__closed">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <button class="modal__close">Закрыть</button>
-        <p class="modal__text">Выберите размер:</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="modal__size">
-            <input class="modal__button" type="radio" name="size" value="S" id="S_field" checked>
-            <span class="modal__value">S</span>
-          </label>
-          <label class="modal__size">
-            <input class="modal__button" type="radio" name="size" value="M" id="M_field">
-            <span class="modal__value modal__value--m">M</span>
-          </label>
-          <label class="modal__size">
-            <input class="modal__button" type="radio" name="size" value="L" id="L_field">
-            <span class="modal__value">L</span>
-          </label>
-          <button class="modal__add button" type="submit">Добавить</button>
-        </form>
+      <div class="modal__background modal__background--closed">
+        <div class="modal__wrapper">
+            <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+            <button class="modal__close">Закрыть</button>
+            <p class="modal__text">Выберите размер:</p>
+            <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="modal__size">
+                <input class="modal__button" type="radio" name="size" value="S" id="S_field" checked>
+                <span class="modal__value">S</span>
+              </label>
+              <label class="modal__size">
+                <input class="modal__button" type="radio" name="size" value="M" id="M_field">
+                <span class="modal__value modal__value--m">M</span>
+              </label>
+              <label class="modal__size">
+                <input class="modal__button" type="radio" name="size" value="L" id="L_field">
+                <span class="modal__value">L</span>
+              </label>
+              <button class="modal__add button" type="submit">Добавить</button>
+            </form>
+          </div>
       </div>
     </div>
     <script src="js/script.js"></script>

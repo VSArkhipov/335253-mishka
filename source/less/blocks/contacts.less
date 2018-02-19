@@ -75,7 +75,8 @@
     margin-left: 30px;
 
     &--email {
-      &:hover {
+      &:hover,
+      &:focus {
         color: @email-hover;
         border-bottom: 1px solid @email-hover;
       }
@@ -143,6 +144,7 @@
       margin-bottom: auto;
       font-size: 17px;
       width: 290px;
+      align-items: flex-start;
 
       &--adds {
         margin-right: 44px;
@@ -155,6 +157,7 @@
       margin-top: 49px;
       margin-left: 1px;
       padding-bottom: 56px;
+      align-items: flex-start;
     }
 
     .contacts__value {
