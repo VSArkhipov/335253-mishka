@@ -55,12 +55,19 @@
     padding-bottom: 7px;
     height: 35px;
     margin-top: -2px;
-    padding-top: 0px;
+    padding-top: 0;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     background: url("../img/icon-phone.svg") no-repeat;
     background-position: 226px 2px;
+
+    &:hover,
+    &:focus {
+      border-color: @aqua-elem;
+      background: url("../img/icon-phone-hover.svg") no-repeat;
+      background-position: 226px 2px;
+    }
 
     &::-webkit-input-placeholder {
       color: rgba(68, 68, 68, 0.3);
@@ -93,6 +100,13 @@
     background: url("../img/icon-mail.svg") no-repeat;
     background-position: 223px -2px;
 
+    &:hover,
+    &:focus {
+      border-color: @aqua-elem;
+      background: url("../img/icon-mail-hover.svg") no-repeat;
+      background-position: 223px -2px;
+    }
+
     &::-webkit-input-placeholder {
       color: rgba(68, 68, 68, 0.3);
     }
@@ -109,26 +123,7 @@
       color: rgba(68, 68, 68, 0.3);
     }
   }
-
-  .relations__tel {
-    &:hover,
-    &:focus,
-    {
-      border-color: @aqua-elem;
-      background: url("../img/icon-phone-hover.svg") no-repeat;
-      background-position: 226px 2px;
-    }
-  }
-
-  .relations__email {
-    &:hover,
-    &:focus {
-      border-color: @aqua-elem;
-      background: url("../img/icon-mail-hover.svg") no-repeat;
-      background-position: 223px -2px;
-      }
-    }
-  }
+}
 
 @media (min-width: 768px) {
   .relations {
@@ -177,14 +172,13 @@
       padding-left: 16px;
       margin-right: 3px;
       font-size: 19px;
-      background: @smoky;
       padding-bottom: 2px;
       background: url("../img/icon-phone.svg") no-repeat;
       background-position: 448px 10px;
+      background-color: @smoky;
 
       &:hover,
-      &:focus,
-      {
+      &:focus {
         background-position: 448px 10px;
       }
     }
@@ -198,10 +192,10 @@
       padding-left: 17px;
       margin-right: 3px;
       font-size: 19px;
-      background: @smoky;
       padding-bottom: 1px;
       background: url("../img/icon-mail.svg") no-repeat;
       background-position: 447px 13px;
+      background-color: @smoky;
 
       &:hover,
       &:focus {
@@ -212,7 +206,7 @@
 }
 
 @media (min-width: 1250px) {
-  .relations{
+  .relations {
     .relations__wrapper {
       width: 1250px;
       .indent-desktop();
@@ -242,6 +236,7 @@
       padding-left: 16px;
       padding-bottom: 0;
       background-position: 667px 10px;
+
       &:hover,
       &:focus {
         background-position: 667px 10px;

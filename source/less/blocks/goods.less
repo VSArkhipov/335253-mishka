@@ -1,4 +1,4 @@
-.goods{
+.goods {
   margin-bottom: 7px;
   background: @grey;
 
@@ -63,7 +63,7 @@
     padding-right: 31px;
     position: relative;
     width: 260px;
-    box-shadow: 0px 0px 0px 0px @aqua-text;
+    box-shadow: 0 0 0 0 @aqua-text;
 
     &::before {
       content: "";
@@ -100,7 +100,7 @@
 .goods__item {
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 5px 0px 0px @aqua-text;
+    box-shadow: 0 5px 0 0 @aqua-text;
 
     .goods__link {
       padding-bottom: 10px;
@@ -120,13 +120,12 @@
 
 .goods__item--second {
   &:hover {
-    box-shadow: 0px 5px 0px 0px @aqua-dark;
+    box-shadow: 0 5px 0 0 @aqua-dark;
   }
 }
 
-
 @media (min-width: 768px) {
-  .goods__link{
+  .goods__link {
     &:hover {
       &::before {
         transform: translateY(-5px);
@@ -198,8 +197,8 @@
 
       &--second {
         &::before {
-            left: 239px;
-            top: 32px;
+          left: 239px;
+          top: 32px;
         }
       }
     }
@@ -214,7 +213,7 @@
 
 @media (min-width: 1250px) {
   .goods {
-  margin-bottom: 77px;
+    margin-bottom: 77px;
 
     .goods__wrapper {
       width: 1250px;
@@ -251,15 +250,15 @@
     .goods__link {
       padding-right: 222px;
 
-        &::before {
-          left: 447px;
-        }
+      &::before {
+        left: 447px;
+      }
 
-        &--second {
-          &::before {
-            left: 430px;
-          }
+      &--second {
+        &::before {
+          left: 430px;
         }
+      }
     }
   }
 }
